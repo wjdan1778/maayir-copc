@@ -1,12 +1,11 @@
 {
-  "name": "معايير COPC — منصة تطوير الموظفين",
-  "short_name": "معايير COPC",
-  "start_url": "./",
-  "scope": "./",
+  "name": "معايير COPC",
+  "short_name": "COPC",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#f4f7f8",
   "theme_color": "#0d766d",
-  "dir": "rtl",
   "lang": "ar",
-  "description": "منصة تطوير الموظفين وإدارة الأداء وKPI والجلسات والتقارير."
+  "dir": "rtl",
+  "icons": []
 }
