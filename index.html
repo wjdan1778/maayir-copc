@@ -1,134 +1,25 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0d766d"><title>معايير COPC | دخول</title><style>
-:root{--teal:#0d766d;--teal2:#18a394;--mint:#e8f6f3;--lav:#e9e2f7;--green:#75bd4b;--ink:#17345f;--muted:#718096;--bg:#f4f7f8;--card:#fff;--line:#e3e9ed;--danger:#d95c68;--amber:#d69b28;--shadow:0 10px 30px rgba(23,52,95,.08)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e9edf0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Tahoma",Arial,sans-serif}
-button,input,select,textarea{font:inherit}.app{max-width:1180px;min-height:100vh;margin:auto;background:var(--bg);position:relative}.screen{display:none;min-height:100vh;padding:28px 22px 110px}.screen.active{display:block}.login{display:grid;place-items:center;padding:30px;background:linear-gradient(145deg,#fafffe,#eeeaf8)}.login-wrap{width:min(460px,100%)}.brand{text-align:center;margin-bottom:22px}.brand-mark{width:78px;height:78px;border-radius:25px;background:linear-gradient(145deg,var(--teal),#159b8e);color:#fff;display:grid;place-items:center;font-weight:950;font-size:22px;margin:auto;box-shadow:0 14px 35px #0d766d35}.brand h1{margin:15px 0 4px;font-size:30px}.brand h1 span{color:var(--teal)}.brand p{margin:0;color:var(--muted)}.login-card{background:var(--card);padding:24px;border-radius:26px;box-shadow:var(--shadow);border:1px solid #fff}.label{display:block;font-size:13px;font-weight:800;margin:14px 0 7px}.input,.select,.textarea{width:100%;border:1px solid var(--line);background:#fbfcfd;border-radius:14px;padding:13px 14px;color:var(--ink);outline:none}.input:focus,.select:focus,.textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px #0d766d15}.btn{border:0;border-radius:14px;padding:13px 17px;background:var(--teal);color:#fff;font-weight:900;cursor:pointer}.btn.full{width:100%;margin-top:16px}.btn.secondary{background:#edf1f4;color:var(--ink)}.btn.ghost{background:transparent;color:var(--teal)}.btn.danger{background:#fff0f1;color:var(--danger)}.topbar{display:flex;align-items:center;gap:13px;margin-bottom:18px}.avatar{width:46px;height:46px;border-radius:15px;background:var(--lav);display:grid;place-items:center;font-weight:900}.topmain{flex:1}.title{font-size:25px;font-weight:950}.sub{font-size:12px;color:var(--muted);margin-top:4px}.top-actions{display:flex;gap:8px}.iconbtn{border:1px solid var(--line);background:#fff;border-radius:13px;width:43px;height:43px;cursor:pointer;color:var(--ink)}.hero{background:linear-gradient(135deg,#0d766d,#169c8d);color:#fff;border-radius:24px;padding:22px;box-shadow:0 14px 30px #0d766d20}.hero .sub{color:#d9f1ee}.hero-row{display:flex;align-items:center;justify-content:space-between;gap:20px}.score{font-size:46px;font-weight:950;line-height:1}.hero-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:17px}.hero-actions .btn{background:#ffffff20;border:1px solid #ffffff35}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:22px 0 10px}.section-head h2{font-size:17px;margin:0}.section-head small{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}.card{background:var(--card);border:1px solid #fff;border-radius:20px;padding:16px;box-shadow:var(--shadow)}.metric{min-height:130px}.metric .name{font-size:12px;font-weight:850;color:var(--muted);line-height:1.5}.metric .value{font-size:26px;font-weight:950;margin:10px 0 4px}.target{font-size:11px;color:var(--muted)}.progress{height:8px;background:#e9eef1;border-radius:99px;overflow:hidden;margin-top:10px}.progress i{display:block;height:100%;border-radius:99px;background:var(--green)}.progress.warn i{background:var(--amber)}.progress.bad i{background:var(--danger)}.twocol{display:grid;grid-template-columns:1.2fr .8fr;gap:12px}.list{display:grid;gap:8px}.list-row{display:flex;align-items:center;gap:10px;padding:12px;border:1px solid var(--line);border-radius:14px;background:#fbfcfd}.list-row .grow{flex:1}.pill{display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border-radius:99px;font-size:11px;font-weight:900;background:var(--mint);color:var(--teal)}.pill.warn{background:#fff4dc;color:#9a6a10}.pill.bad{background:#ffe7e9;color:#a93e4b}.pill.lav{background:var(--lav);color:#6d57a1}.notice{padding:13px 15px;border-radius:15px;background:#edf8f4;line-height:1.8;font-size:13px}.tabs{display:flex;gap:7px;overflow:auto;padding-bottom:2px}.tab{border:0;background:#e9eef1;color:var(--muted);padding:9px 13px;border-radius:99px;font-weight:850;white-space:nowrap;cursor:pointer}.tab.active{background:var(--lav);color:#624d98}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:13px}.search{flex:1;min-width:190px}.employees{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.employee{cursor:pointer;transition:.15s}.employee:hover{transform:translateY(-2px)}.employee-top{display:flex;align-items:center;gap:10px}.employee .avatar{width:42px;height:42px}.employee .grow{flex:1}.score-mini{font-size:22px;font-weight:950}.rankbar{height:9px;background:#e8edf0;border-radius:99px;overflow:hidden;margin:12px 0 8px}.rankbar i{display:block;height:100%;background:linear-gradient(90deg,var(--green),var(--teal2));border-radius:99px}.employee-foot{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted)}.kpi-table{display:grid;gap:9px}.kpi-row{display:grid;grid-template-columns:1.3fr .7fr .7fr 1fr;gap:8px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:14px;background:#fbfcfd;font-size:12px}.kpi-row b{font-size:12px}.review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.review-box{padding:13px;border-radius:15px;background:#fafbfc;border:1px solid var(--line)}.review-box b{display:block;margin-bottom:6px}.session{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}.session:last-child{border-bottom:0}.session-icon{width:40px;height:40px;border-radius:13px;background:var(--lav);display:grid;place-items:center}.modal-back{position:fixed;inset:0;background:#0b1628aa;display:none;align-items:flex-end;justify-content:center;z-index:50;padding:14px}.modal-back.open{display:flex}.modal{width:min(620px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:24px;padding:20px;box-shadow:0 20px 60px #0003}.modal-head{display:flex;justify-content:space-between;align-items:center}.modal-head h3{margin:0}.modal-actions{display:flex;gap:8px;justify-content:flex-start;margin-top:15px}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(1180px,100%);height:76px;background:#ffffffed;backdrop-filter:blur(14px);border-top:1px solid var(--line);display:flex;justify-content:space-around;align-items:center;z-index:20}.nav button{border:0;background:none;color:#8b96a5;font-size:10px;font-weight:900;cursor:pointer}.nav b{display:block;font-size:19px;margin-bottom:2px}.nav .on{color:var(--teal)}.toast{position:fixed;top:18px;left:50%;transform:translateX(-50%);background:#17345f;color:#fff;padding:11px 16px;border-radius:99px;z-index:80;font-weight:850;box-shadow:0 10px 30px #0002}.hide{display:none!important}.empty{text-align:center;padding:30px;color:var(--muted)}@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.twocol{grid-template-columns:1fr}.employees{grid-template-columns:1fr}.kpi-row{grid-template-columns:1.2fr .7fr .7fr}.kpi-row .barcell{grid-column:1/-1}.review-grid{grid-template-columns:1fr}.score{font-size:39px}.hero-row{align-items:flex-start}}@media(min-width:801px){.screen{padding:34px 40px 110px}.modal-back{align-items:center}}
-
-.print-only{display:none}
-@media print{body{background:#fff}.screen{display:none!important}.print-only{display:block}.nav,.top-actions,.hero-actions{display:none!important}.app{max-width:none}.card,.hero{box-shadow:none;border:1px solid #ddd}}
-@media(min-width:1000px){.screen{padding-left:54px;padding-right:54px}.grid{grid-template-columns:repeat(4,1fr)}}
-
-body{background:#e9edf0}.app{display:flex;max-width:1400px;min-height:100vh;background:var(--bg)}
-.sidebar{width:250px;min-width:250px;background:#fff;border-left:1px solid var(--line);padding:20px 14px;position:sticky;top:0;height:100vh;overflow:auto}
-.side-brand{padding:8px 10px 18px;border-bottom:1px solid var(--line);margin-bottom:12px}.side-brand b{font-size:21px}.side-brand span{color:var(--teal)}.side-brand small{display:block;color:var(--muted);margin-top:5px}
-.side-section{margin:14px 0}.side-label{font-size:11px;color:#98a2ae;font-weight:900;padding:0 10px 6px}.side-link,.side-toggle{width:100%;display:flex;align-items:center;gap:9px;border:0;background:none;color:var(--ink);padding:11px 10px;border-radius:13px;cursor:pointer;font-weight:850;text-align:right}.side-link:hover,.side-toggle:hover,.side-link.on{background:var(--mint);color:var(--teal)}.side-icon{width:26px;text-align:center}.side-children{display:grid;gap:3px;margin:3px 0 7px 0;padding-right:34px}.side-children a{color:var(--muted);text-decoration:none;font-size:12px;padding:7px 8px;border-radius:9px}.side-children a:hover{background:#f2f5f6;color:var(--teal)}
-.main{flex:1;min-width:0}.mobile-head{display:none}.page{display:none}.page.active{display:block}
-.page-wrap{padding:30px 34px 70px;max-width:1150px;margin:auto}.crumb{font-size:12px;color:var(--muted);margin:0 0 7px}.page-title{font-size:29px;font-weight:950;margin:0}.page-desc{color:var(--muted);margin:7px 0 22px;line-height:1.8}
-.link-card{display:block;text-decoration:none;color:inherit}.action-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.action-card{transition:.15s;cursor:pointer}.action-card:hover{transform:translateY(-2px)}.action-card .big{font-size:28px}.action-card h3{margin:10px 0 4px}.action-card p{color:var(--muted);font-size:12px;line-height:1.7;margin:0}
-.section-link{display:flex;align-items:center;justify-content:space-between;text-decoration:none;color:inherit}
-@media(max-width:900px){.app{display:block}.sidebar{display:none}.mobile-head{display:flex;position:sticky;top:0;z-index:30;background:#ffffffef;backdrop-filter:blur(12px);padding:12px 14px;border-bottom:1px solid var(--line);align-items:center;gap:10px}.mobile-head .grow{flex:1}.page-wrap{padding:22px 16px 95px}.action-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.action-grid{grid-template-columns:1fr}.page-title{font-size:24px}}
-</style></head><body><div class="app" style="display:block"><main class="main"><section class="page active"><div class="page-wrap">
-<div style="max-width:520px;margin:4vh auto">
-<div class="brand"><div class="brand-mark">COPC</div><h1>معايير <span>COPC</span></h1><p>منصة تطوير الموظفين وإدارة الأداء التشغيلي</p></div>
-<div class="login-card">
-<label class="label">نوع الحساب</label>
-<select id="role" class="select"><option value="supervisor">مشرفة — وجدان</option><option value="employee">موظفة — سارة أحمد</option></select>
-<label class="label">كلمة المرور التجريبية</label><input id="pass" class="input" value="COPC2026" type="password">
-<button class="btn full" onclick="enter()">دخول إلى المنصة</button>
-<div class="notice" style="margin-top:14px">نسخة تجريبية متعددة الصفحات — كل قسم يفتح صفحة مستقلة، والبيانات تحفظ محليًا على نفس الجهاز.</div>
-</div></div>
-</div></section></main></div><div id="toast" class="toast hide"></div><script>
-const KEY="maayir-copc-demo-v2";
-const seed=[
-["سارة أحمد",97.8,"3:05",98,94,91,96,93,"ممتاز"],
-["ريم محمد",94.6,"3:18",97,91,89,94,91,"ممتاز"],
-["نورة خالد",91.3,"3:26",96,88,87,92,89,"ممتاز"],
-["جود عبدالله",88.7,"3:31",95,85,84,90,87,"جيد"],
-["هند علي",84.2,"3:42",94,81,82,87,84,"جيد"],
-["لطيفة سالم",79.5,"3:58",92,78,79,83,80,"يحتاج تطوير"],
-["مشاعل حسن",74.1,"4:10",90,73,75,79,76,"يحتاج تطوير"],
-["أمل يوسف",68.9,"4:25",88,69,70,75,71,"يحتاج تطوير"],
-["رغد إبراهيم",61.7,"4:46",85,62,65,68,64,"متابعة مكثفة"],
-["شهد ماجد",53.4,"5:02",81,54,57,61,58,"متابعة مكثفة"]
-];
-function freshDB(){return {employees:seed.map((x,i)=>({id:i+1,name:x[0],score:x[1],aht:x[2],abs:x[3],quality:x[4],util:x[5],csat:x[6],fcr:x[7],status:x[8],notes:[],sessions:i<3?[{type:"Side by Side",date:"2026-09-05",note:"مراجعة مكالمة ناجحة وتعزيز أفضل الممارسات"}]:[]})),currentRole:"supervisor",selected:1}}
-function db(){try{return JSON.parse(localStorage.getItem(KEY))||freshDB()}catch(e){return freshDB()}}
-let state=db(); if(!localStorage.getItem(KEY)) save(state);
-function save(x){localStorage.setItem(KEY,JSON.stringify(x))}
-function initials(n){return n.split(" ").slice(0,2).map(x=>x[0]).join("")}
-function getEmp(){return state.employees.find(e=>e.id==state.selected)||state.employees[0]}
-function nav(active){
- document.querySelectorAll("[data-nav]").forEach(x=>x.classList.toggle("on",x.dataset.nav===active));
-}
-function layout(active){
- nav(active);
- const name=state.currentRole==="employee"?"حساب الموظفة":"حساب المشرفة";
- document.querySelectorAll(".roleName").forEach(x=>x.textContent=name);
-}
-function go(url){location.href=url}
-function toast(msg){
- const t=document.getElementById("toast"); if(!t)return;
- t.textContent=msg;t.classList.remove("hide");clearTimeout(window.__toast);
- window.__toast=setTimeout(()=>t.classList.add("hide"),2200);
-}
-function setRole(r){state.currentRole=r;save(state)}
-function openEmployee(id){state.selected=id;save(state);go("employee.html")}
-function resetDemo(){if(confirm("إعادة بيانات النسخة التجريبية؟")){state=freshDB();save(state);toast("تمت إعادة البيانات");setTimeout(()=>location.reload(),500)}}
-function logout(){state.currentRole=null;save(state);go("index.html")}
-function metric(label,value,target,unit="",pct=null){
- pct=pct===null?Math.min(100,Number(value)||0):pct;
- return `<div class="card metric"><div class="name">${label}</div><div class="value">${value}${unit}</div><div class="target">Target ${target}${unit}</div><div class="progress ${pct<80?"bad":pct<90?"warn":""}"><i style="width:${Math.min(100,pct)}%"></i></div></div>`;
-}
-function employeeCard(e){
- return `<div class="card employee" onclick="openEmployee(${e.id})">
- <div class="employee-top"><div class="avatar">${initials(e.name)}</div><div class="grow"><b>${e.name}</b><div class="sub">KPI · ${e.status}</div></div><div class="score-mini">${e.score}%</div></div>
- <div class="rankbar"><i style="width:${e.score}%"></i></div>
- <div class="employee-foot"><span>Quality ${e.quality}%</span><span class="pill ${e.score<80?"bad":e.score<90?"warn":""}">${e.status}</span></div></div>`;
-}
-function saveEmployeeFields(id){
- const e=state.employees.find(x=>x.id==id);
- ["score","abs","quality","util","csat","fcr"].forEach(k=>e[k]=Number(document.getElementById("m_"+k).value));
- e.aht=document.getElementById("m_aht").value;
- e.status=e.score>=90?"ممتاز":e.score>=80?"جيد":e.score>=65?"يحتاج تطوير":"متابعة مكثفة";
- save(state); closeModal(); renderEmployeePage(); toast("تم حفظ بيانات الموظفة");
-}
-function modal(title,body){
- const back=document.getElementById("modalBack"); if(!back)return;
- document.getElementById("modalTitle").textContent=title;document.getElementById("modalContent").innerHTML=body;back.classList.add("open");
-}
-function closeModal(){document.getElementById("modalBack")?.classList.remove("open")}
-function editEmployee(id){
- const e=state.employees.find(x=>x.id==id);
- modal("تعديل بيانات الموظفة",`
- <label class="label">النتيجة الموزونة %</label><input id="m_score" class="input" type="number" step=".1" value="${e.score}">
- <label class="label">AHT</label><input id="m_aht" class="input" value="${e.aht}">
- <label class="label">Absenteeism %</label><input id="m_abs" class="input" type="number" value="${e.abs}">
- <label class="label">Quality %</label><input id="m_quality" class="input" type="number" value="${e.quality}">
- <label class="label">Utilization %</label><input id="m_util" class="input" type="number" value="${e.util}">
- <label class="label">C-SAT %</label><input id="m_csat" class="input" type="number" value="${e.csat}">
- <label class="label">FCR %</label><input id="m_fcr" class="input" type="number" value="${e.fcr}">
- <div class="modal-actions"><button class="btn" onclick="saveEmployeeFields(${id})">حفظ التغييرات</button><button class="btn secondary" onclick="closeModal()">إلغاء</button></div>`);
-}
-function saveSession(id){
- const e=state.employees.find(x=>x.id==id);
- e.sessions.push({type:document.getElementById("sType").value,date:document.getElementById("sDate").value,note:document.getElementById("sNote").value||"جلسة تطوير ومتابعة الأداء"});
- save(state);closeModal();renderEmployeePage?.();renderSessions?.();toast("تم تسجيل الجلسة");
-}
-function addSession(id=state.selected){
- modal("إضافة جلسة تطوير",`
- <label class="label">نوع الجلسة</label><select id="sType" class="select"><option>Coaching</option><option>Side by Side</option><option>Monthly Performance</option></select>
- <label class="label">التاريخ</label><input id="sDate" class="input" type="date" value="${new Date().toISOString().slice(0,10)}">
- <label class="label">ملاحظات الجلسة</label><textarea id="sNote" class="textarea" rows="4" placeholder="اكتبي الملاحظة وخطة المتابعة..."></textarea>
- <div class="modal-actions"><button class="btn" onclick="saveSession(${id})">حفظ الجلسة</button><button class="btn secondary" onclick="closeModal()">إلغاء</button></div>`);
-}
-function saveReview(id){
- const e=state.employees.find(x=>x.id==id); e.notes=e.notes||[];
- e.notes.push({date:new Date().toISOString().slice(0,10),strength:document.getElementById("rStrength").value,improve:document.getElementById("rImprove").value,challenges:document.getElementById("rChallenges").value,plan:document.getElementById("rPlan").value});
- save(state);closeModal();toast("تم حفظ Monthly Review");renderEmployeePage?.();
-}
-function monthlyReview(id=state.selected){
- modal("Monthly Performance Review",`
- <div class="notice">مراجعة شهرية منظمة: نقاط القوة، فرص التحسين، التحديات، وخطة الشهر القادم.</div>
- <label class="label">نقاط القوة</label><textarea id="rStrength" class="textarea" rows="3"></textarea>
- <label class="label">فرص التحسين</label><textarea id="rImprove" class="textarea" rows="3"></textarea>
- <label class="label">التحديات</label><textarea id="rChallenges" class="textarea" rows="3"></textarea>
- <label class="label">خطة العمل للشهر القادم</label><textarea id="rPlan" class="textarea" rows="3"></textarea>
- <div class="modal-actions"><button class="btn" onclick="saveReview(${id})">حفظ المراجعة</button><button class="btn secondary" onclick="closeModal()">إلغاء</button></div>`);
-}
-function printEmployee(id){
- const e=state.employees.find(x=>x.id==id),w=window.open("","_blank");
- if(!w){toast("اسمحي بالنوافذ المنبثقة للطباعة");return}
- w.document.write(`<html dir="rtl"><head><title>تقرير ${e.name}</title><style>body{font-family:Arial;padding:30px;color:#17345f}h1{color:#0d766d}table{width:100%;border-collapse:collapse}td,th{border:1px solid #ddd;padding:10px}</style></head><body><h1>معايير COPC</h1><h2>تقرير ${e.name}</h2><h3>${e.score}% — ${e.status}</h3><table><tr><th>KPI</th><th>النتيجة</th><th>Target</th></tr><tr><td>AHT</td><td>${e.aht}</td><td>3:30</td></tr><tr><td>Absenteeism</td><td>${e.abs}%</td><td>95%</td></tr><tr><td>Quality</td><td>${e.quality}%</td><td>80%</td></tr><tr><td>Utilization</td><td>${e.util}%</td><td>85%</td></tr><tr><td>C-SAT</td><td>${e.csat}%</td><td>—</td></tr><tr><td>FCR</td><td>${e.fcr}%</td><td>—</td></tr></table><script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}</script></body></html>`);
- w.document.close();setTimeout(()=>w.print(),300);
-}
-</script><script>function enter(){if(document.getElementById('pass').value!=='COPC2026'){toast('كلمة المرور التجريبية غير صحيحة');return}const role=document.getElementById('role').value;setRole(role);location.href=role==='employee'?'employee-home.html':'dashboard.html'}</script><script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}</script></body></html>
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>معايير COPC | الدخول</title><style>
+*{box-sizing:border-box}body{margin:0;background:#eef2f3;color:#17345f;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+a{text-decoration:none;color:inherit}.app{min-height:100vh;display:flex}.side{width:255px;background:#fff;border-left:1px solid #dce3e6;padding:18px 13px;position:sticky;top:0;height:100vh;overflow:auto}.brand{padding:8px 10px 18px;border-bottom:1px solid #e3e8ea;margin-bottom:12px}.brand b{font-size:21px}.brand span{color:#0d766d}.brand small{display:block;color:#7d8b94;margin-top:5px}
+.navtitle{font-size:11px;color:#9aa5ad;font-weight:800;padding:10px}.nav,.subnav{display:block;padding:11px 12px;border-radius:12px;font-weight:800}.nav:hover,.nav.active,.subnav:hover{background:#e7f5f2;color:#0d766d}.subnav{font-size:12px;color:#687984;padding:7px 12px;margin-right:18px}
+.main{flex:1;min-width:0}.mobile{display:none}.wrap{max-width:1120px;margin:auto;padding:30px 34px 70px}.crumb{color:#829099;font-size:12px;margin-bottom:7px}.title{font-size:30px;font-weight:900;margin:0 0 7px}.desc{color:#72818a;line-height:1.8;margin:0 0 22px}.top{display:flex;align-items:center;gap:12px;margin-bottom:18px}.avatar{width:44px;height:44px;border-radius:50%;background:#dff1ed;color:#0d766d;display:grid;place-items:center;font-weight:900}.grow{flex:1}.sub{font-size:12px;color:#7c8991}.hero{background:linear-gradient(135deg,#0d766d,#159b91);color:white;border-radius:22px;padding:25px;margin:0 0 16px}.hero-row{display:flex;align-items:center;justify-content:space-between}.score{font-size:44px;font-weight:950}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#fff;border:1px solid #dfe6e8;border-radius:17px;padding:17px;box-shadow:0 5px 18px #193b5510}.metric .name{font-size:12px;color:#71808a}.metric .value{font-size:25px;font-weight:900;margin:7px 0}.target{font-size:11px;color:#89959c}.progress{height:7px;background:#e6ecee;border-radius:9px;overflow:hidden;margin-top:9px}.progress i{display:block;height:100%;background:#35a79a;border-radius:9px}.section{display:flex;align-items:center;justify-content:space-between;margin:22px 0 12px}.section h2{margin:0;font-size:19px}.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.action{transition:.15s}.action:hover{transform:translateY(-2px)}.big{font-size:30px}.action h3{margin:9px 0 4px}.action p{margin:0;color:#7a8890;font-size:12px;line-height:1.7}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}.input,.select,.textarea{width:100%;border:1px solid #d7e0e3;border-radius:11px;padding:11px 12px;font:inherit;background:#fff}.search{max-width:350px}.btn{border:0;border-radius:11px;background:#0d766d;color:#fff;padding:11px 16px;font-weight:850;cursor:pointer}.btn.secondary{background:#edf2f3;color:#31505c}.btn.full{width:100%;margin-top:15px}.danger{background:#b54848}.employees{display:grid;gap:10px}.employee{cursor:pointer}.employee-top{display:flex;align-items:center;gap:12px}.scoremini{font-size:18px;font-weight:900}.pill{display:inline-block;background:#e7f5f2;color:#0d766d;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:800}.review{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.reviewbox{background:#f6f8f9;border-radius:13px;padding:13px;line-height:1.7}.reviewbox b{display:block;margin-bottom:5px}.session{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}.sessionicon{font-size:28px}.modalback{display:none;position:fixed;inset:0;background:#0007;z-index:50;align-items:center;justify-content:center;padding:15px}.modalback.open{display:flex}.modal{width:min(560px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:18px;padding:18px}.modalhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.modalhead h3{margin:0}.label{display:block;font-size:12px;font-weight:800;margin:10px 0 5px}.modalactions{display:flex;gap:8px;margin-top:15px}.empty{color:#7b8990;text-align:center}.login{max-width:500px;margin:8vh auto}.login .brand{text-align:center;border:0}.brandmark{width:76px;height:76px;border-radius:22px;background:#0d766d;color:#fff;display:grid;place-items:center;font-weight:950;font-size:20px;margin:auto}.login h1{font-size:32px}.login h1 span{color:#0d766d}.login p{color:#77858c}
+@media(max-width:900px){.side{display:none}.mobile{display:flex;position:sticky;top:0;z-index:20;background:#fffffff2;backdrop-filter:blur(12px);padding:12px 15px;border-bottom:1px solid #dde4e6;align-items:center;gap:10px}.wrap{padding:22px 15px 65px}.grid{grid-template-columns:repeat(2,1fr)}.actions{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid,.actions,.review{grid-template-columns:1fr}.title{font-size:24px}.score{font-size:38px}}
+</style></head><body><div class="app"><main class="main"><div class="mobile"><div class="grow"><b>معايير COPC</b><div class="sub">حساب المشرفة — وجدان</div></div><a href="dashboard.html">⌂</a></div><div class="wrap"><div class="login"><div class="brand"><div class="brandmark">COPC</div><h1>معايير <span>COPC</span></h1><p>منصة تطوير الموظفين وإدارة الأداء</p></div><div class="card"><label class="label">نوع الحساب</label><select id="role" class="select"><option value="supervisor">مشرفة — وجدان</option><option value="employee">موظفة — سارة أحمد</option></select><label class="label">كلمة المرور التجريبية</label></div></div></div></main></div><div id="modalBack" class="modalback" onclick="if(event.target===this)closeModal()"><div class="modal"><div class="modalhead"><h3 id="modalTitle"></h3><button class="btn secondary" onclick="closeModal()">×</button></div><div id="modalContent"></div></div></div><script>
+const KEY="maayir-copc-clean-v5";
+const SEED=[{"id": 1, "name": "سارة أحمد", "score": 97.8, "aht": "3:05", "abs": 98, "quality": 94, "util": 91, "csat": 96, "fcr": 93, "status": "ممتاز", "notes": [], "sessions": []}, {"id": 2, "name": "ريم محمد", "score": 94.6, "aht": "3:18", "abs": 97, "quality": 91, "util": 89, "csat": 94, "fcr": 91, "status": "ممتاز", "notes": [], "sessions": []}, {"id": 3, "name": "نورة خالد", "score": 91.3, "aht": "3:26", "abs": 96, "quality": 88, "util": 87, "csat": 92, "fcr": 89, "status": "ممتاز", "notes": [], "sessions": []}, {"id": 4, "name": "جود عبدالله", "score": 88.7, "aht": "3:31", "abs": 95, "quality": 85, "util": 84, "csat": 90, "fcr": 87, "status": "جيد", "notes": [], "sessions": []}, {"id": 5, "name": "هند علي", "score": 84.2, "aht": "3:42", "abs": 94, "quality": 81, "util": 82, "csat": 87, "fcr": 84, "status": "جيد", "notes": [], "sessions": []}, {"id": 6, "name": "لطيفة سالم", "score": 79.5, "aht": "3:58", "abs": 92, "quality": 78, "util": 79, "csat": 83, "fcr": 80, "status": "يحتاج تطوير", "notes": [], "sessions": []}, {"id": 7, "name": "مشاعل حسن", "score": 74.1, "aht": "4:10", "abs": 90, "quality": 73, "util": 75, "csat": 79, "fcr": 76, "status": "يحتاج تطوير", "notes": [], "sessions": []}, {"id": 8, "name": "أمل يوسف", "score": 68.9, "aht": "4:25", "abs": 88, "quality": 69, "util": 70, "csat": 75, "fcr": 71, "status": "يحتاج تطوير", "notes": [], "sessions": []}, {"id": 9, "name": "رغد إبراهيم", "score": 61.7, "aht": "4:46", "abs": 85, "quality": 62, "util": 65, "csat": 68, "fcr": 64, "status": "متابعة مكثفة", "notes": [], "sessions": []}, {"id": 10, "name": "شهد ماجد", "score": 53.4, "aht": "5:02", "abs": 81, "quality": 54, "util": 57, "csat": 61, "fcr": 58, "status": "متابعة مكثفة", "notes": [], "sessions": []}];
+function fresh(){return {employees:SEED.map(e=>({...e,notes:[],sessions:[]})),role:null,selected:1}}
+function getState(){try{return JSON.parse(localStorage.getItem(KEY))||fresh()}catch(e){return fresh()}}
+let state=getState();if(!localStorage.getItem(KEY))save();
+function save(){localStorage.setItem(KEY,JSON.stringify(state))}
+function emp(id){return state.employees.find(e=>e.id==id)||state.employees[0]}
+function init(n){return n.split(" ").slice(0,2).map(x=>x[0]).join("")}
+function metric(l,v,t,u="",p=null){p=p===null?Math.min(100,Number(v)||0):p;return `<div class="card metric"><div class="name">${l}</div><div class="value">${v}${u}</div><div class="target">Target ${t}${u}</div><div class="progress"><i style="width:${Math.min(100,p)}%"></i></div></div>`}
+function modal(title,html){document.getElementById("modalTitle").textContent=title;document.getElementById("modalContent").innerHTML=html;document.getElementById("modalBack").classList.add("open")}
+function closeModal(){document.getElementById("modalBack").classList.remove("open")}
+function logout(){state.role=null;save();location.href="index.html"}
+function addSession(id,type){modal("تسجيل جلسة",`<label class="label">نوع الجلسة</label><select id="stype" class="select"><option ${type==="Coaching"?"selected":""}>Coaching</option><option ${type==="Side by Side"?"selected":""}>Side by Side</option></select><label class="label">التاريخ</label><input id="sdate" class="input" type="date" value="${new Date().toISOString().slice(0,10)}"><label class="label">الملاحظات</label><textarea id="snote" class="textarea" rows="4"></textarea><div class="modalactions"><button class="btn" onclick="saveSession(${id})">حفظ</button><button class="btn secondary" onclick="closeModal()">إلغاء</button></div>`)} 
+function saveSession(id){let e=emp(id);e.sessions.push({type:stype.value,date:sdate.value,note:snote.value||"جلسة تطوير ومتابعة"});save();closeModal();location.reload()}
+function monthlyReview(id){modal("Monthly Performance Review",`<label class="label">نقاط القوة</label><textarea id="rs" class="textarea" rows="3"></textarea><label class="label">فرص التحسين</label><textarea id="ri" class="textarea" rows="3"></textarea><label class="label">التحديات</label><textarea id="rc" class="textarea" rows="3"></textarea><label class="label">خطة الشهر القادم</label><textarea id="rp" class="textarea" rows="3"></textarea><div class="modalactions"><button class="btn" onclick="saveReview(${id})">حفظ</button><button class="btn secondary" onclick="closeModal()">إلغاء</button></div>`)} 
+function saveReview(id){let e=emp(id);e.notes.push({date:new Date().toISOString().slice(0,10),strength:rs.value,improve:ri.value,challenges:rc.value,plan:rp.value});save();closeModal();location.reload()}
+</script><script>function enter(){if(document.getElementById("pass").value!=="COPC2026"){alert("كلمة المرور التجريبية غير صحيحة");return}state.role=document.getElementById("role").value;state.selected=1;save();location.href=state.role==="employee"?"employee-home.html":"dashboard.html"}</script></body></html>
