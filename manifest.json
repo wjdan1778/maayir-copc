@@ -1,0 +1,11 @@
+{
+  "name": "معايير COPC",
+  "short_name": "COPC",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f4f7f7",
+  "theme_color": "#278b7c",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": []
+}
