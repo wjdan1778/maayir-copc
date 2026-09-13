@@ -41,4 +41,6 @@ function kpiCard(e,key,name,target){let val=e[key];let width=key==='aht'?Math.mi
 function parseTime(t){let a=t.split(':').map(Number);return a[0]*60+a[1]}
 function openNote(e){alert(actionFor(e))}
 function enter(){let r=document.getElementById('role').value;location.href=r==='supervisor'?'supervisor.html':'employee-home.html'}
-</script><script>location.replace('supervisor-development.html');</script></html>
+</script><script>
+supShell('ملاحظات التطوير','development',`<div class="hero"><h1>ملاحظات التطوير</h1><p>بطاقات مستقلة لكل موظفة: نقاط القوة، فرص التحسين، والإجراء المطلوب.</p></div><div class="grid2">${S.employees.map(e=>`<div class="card"><div style="display:flex;justify-content:space-between"><h3 style="margin:0">${e.name}</h3><span class="pill ${cls(e.score)}">${e.score}%</span></div><div class="note"><strong>نقاط القوة</strong>${e.score>=90?'أداء متميز ومستوى ثابت في معظم المؤشرات.':e.score>=80?'مستوى جيد مع مؤشرات قابلة للتحسين.':'لديها أساس جيد يمكن البناء عليه مع خطة متابعة واضحة.'}</div><div class="note"><strong>فرص التحسين</strong>${noteFor(e).join(' ')}</div><div class="note"><strong>ماذا يجب أن تفعل المشرفة؟</strong>${actionFor(e)}</div><a class="btn soft full" href="supervisor-employee.html?id=${e.id}">فتح الملف</a></div>`).join('')}</div>`);
+</script></html>

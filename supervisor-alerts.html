@@ -41,4 +41,9 @@ function kpiCard(e,key,name,target){let val=e[key];let width=key==='aht'?Math.mi
 function parseTime(t){let a=t.split(':').map(Number);return a[0]*60+a[1]}
 function openNote(e){alert(actionFor(e))}
 function enter(){let r=document.getElementById('role').value;location.href=r==='supervisor'?'supervisor.html':'employee-home.html'}
-</script><script>location.replace('supervisor-development.html');</script></html>
+</script><script>
+let low=S.employees.filter(e=>e.score<80).sort((a,b)=>a.score-b.score), near=S.employees.filter(e=>e.score>=80&&e.score<90);
+supShell('التنبيهات','alerts',`<div class="hero"><h1>التنبيهات والمتابعة</h1><p>الأولوية هنا للموظفات اللاتي تحتاج المشرفة إلى اتخاذ إجراء معهن.</p></div>
+<div class="grid3"><div class="card stat"><div class="label">تنبيهات عالية</div><div class="num" style="color:#c8434c">${S.employees.filter(e=>e.score<65).length}</div><div class="muted">أقل من 65%</div></div><div class="card stat"><div class="label">تحتاج متابعة</div><div class="num" style="color:#c27b1c">${low.length}</div><div class="muted">أقل من 80%</div></div><div class="card stat"><div class="label">متابعة شهرية</div><div class="num">${near.length}</div><div class="muted">80% إلى أقل من 90%</div></div></div>
+<div class="section"><h2>قائمة الإجراءات</h2></div><div class="card">${S.employees.slice().sort((a,b)=>a.score-b.score).map(e=>`<div class="alert ${e.score<65?'red':e.score<80?'orange':'green'}"><div class="pill ${cls(e.score)}">${e.score}%</div><div style="flex:1"><h3>${e.name} — ${status(e.score)}</h3><p><b>ما يجب عمله:</b> ${actionFor(e)}<br><b>ملاحظة:</b> ${noteFor(e)[0]}</p></div><a class="btn soft" href="supervisor-employee.html?id=${e.id}">فتح الملف</a></div>`).join('')}</div>`);
+</script></html>

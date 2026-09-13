@@ -41,4 +41,6 @@ function kpiCard(e,key,name,target){let val=e[key];let width=key==='aht'?Math.mi
 function parseTime(t){let a=t.split(':').map(Number);return a[0]*60+a[1]}
 function openNote(e){alert(actionFor(e))}
 function enter(){let r=document.getElementById('role').value;location.href=r==='supervisor'?'supervisor.html':'employee-home.html'}
-</script><script>location.replace('supervisor-development.html');</script></html>
+</script><script>
+supShell('الموظفات','employees',`<div class="hero"><h1>الموظفات التابعات</h1><p>ملف مستقل لكل موظفة مع الأداء والتنبيهات وملاحظات التطوير.</p></div><div class="grid2">${S.employees.map(e=>`<a class="card" href="supervisor-employee.html?id=${e.id}"><div style="display:flex;justify-content:space-between;align-items:center"><div><h3 style="margin:0 0 5px">${e.name}</h3><div class="muted">C-SAT ${e.csat}% • FCR ${e.fcr}%</div></div><span class="pill ${cls(e.score)}">${e.score}%</span></div><div class="bar ${e.score>=90?'green':e.score>=80?'orange':'red'}"><i style="width:${e.score}%"></i></div><div class="actions" style="margin-top:10px"><span class="pill ${cls(e.quality)}">Quality ${e.quality}%</span><span class="pill ${cls(e.util)}">Util ${e.util}%</span></div></a>`).join('')}</div>`);
+</script></html>

@@ -41,4 +41,12 @@ function kpiCard(e,key,name,target){let val=e[key];let width=key==='aht'?Math.mi
 function parseTime(t){let a=t.split(':').map(Number);return a[0]*60+a[1]}
 function openNote(e){alert(actionFor(e))}
 function enter(){let r=document.getElementById('role').value;location.href=r==='supervisor'?'supervisor.html':'employee-home.html'}
-</script><script>location.replace('supervisor-development.html');</script></html>
+</script><script>
+let id=new URLSearchParams(location.search).get('id')||1,e=emp(id),notes=noteFor(e);
+supShell('ملف الموظفة','employees',`<div class="hero"><div class="muted">ملف الموظفة • المشرفة وجدان</div><h1>${e.name}</h1><div class="actions"><span class="pill ${cls(e.score)}">الأداء ${e.score}% — ${status(e.score)}</span><a class="btn soft" href="supervisor-employees.html">العودة للفريق</a></div></div>
+<div class="grid4"><div class="card stat"><div class="label">الأداء</div><div class="num ${textCls(e.score)}">${e.score}%</div></div><div class="card stat"><div class="label">C-SAT</div><div class="num">${e.csat}%</div></div><div class="card stat"><div class="label">FCR</div><div class="num">${e.fcr}%</div></div><div class="card stat"><div class="label">AHT</div><div class="num">${e.aht}</div></div></div>
+<div class="section"><h2>KPI</h2></div><div class="grid4">${kpiCard(e,'aht','AHT','3:30')}${kpiCard(e,'abs','Absenteeism','95%')}${kpiCard(e,'quality','Quality','80%')}${kpiCard(e,'util','Utilization','85%')}</div>
+<div class="grid2" style="margin-top:15px"><div class="card"><h3>🔔 التنبيه</h3><div class="alert ${e.score<80?'orange':'green'}"><div><b>${e.score<80?'تحتاج متابعة':'لا يوجد تنبيه حرج'}</b><p>${actionFor(e)}</p></div></div></div>
+<div class="card"><h3>📝 ملاحظات التطوير</h3>${notes.map(n=>`<div class="note">${n}</div>`).join('')}</div></div>
+<div class="section"><h2>ماذا يجب على المشرفة أن تفعل؟</h2></div><div class="card"><div class="alert ${e.score<65?'red':e.score<80?'orange':'green'}"><div><h3>الإجراء المقترح</h3><p>${actionFor(e)}</p></div></div></div>`);
+</script></html>

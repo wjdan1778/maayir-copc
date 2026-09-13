@@ -41,4 +41,16 @@ function kpiCard(e,key,name,target){let val=e[key];let width=key==='aht'?Math.mi
 function parseTime(t){let a=t.split(':').map(Number);return a[0]*60+a[1]}
 function openNote(e){alert(actionFor(e))}
 function enter(){let r=document.getElementById('role').value;location.href=r==='supervisor'?'supervisor.html':'employee-home.html'}
-</script><script>location.replace('supervisor-development.html');</script></html>
+</script><script>
+let avg=+(S.employees.reduce((a,e)=>a+e.score,0)/10).toFixed(1), ex=S.employees.filter(e=>e.score>=90), good=S.employees.filter(e=>e.score>=80&&e.score<90), low=S.employees.filter(e=>e.score<80), avgQ=Math.round(S.employees.reduce((a,e)=>a+e.quality,0)/10);
+supShell('الرئيسية','home',`<div class="hero"><h1>لوحة المشرفة</h1><p>مرحبًا وجدان — لوحة تفصيلية لمتابعة الأداء العام للموظفات، التنبيهات وملاحظات التطوير.</p></div>
+<div class="grid4"><div class="card stat"><div class="label">عدد الموظفات</div><div class="num">10</div><div class="muted">الفريق التابع</div></div><div class="card stat"><div class="label">متوسط الأداء</div><div class="num">${avg}%</div><div class="pill good">متوسط الفريق</div></div><div class="card stat"><div class="label">ممتاز</div><div class="num" style="color:#568f30">${ex.length}</div><div class="pill excellent">90% فأعلى</div></div><div class="card stat"><div class="label">يحتاج متابعة</div><div class="num" style="color:#c8434c">${low.length}</div><div class="pill low">أقل من 80%</div></div></div>
+<div class="section"><h2>اختصارات المشرفة</h2></div><div class="grid4">
+<a class="card shortcut" href="supervisor-performance.html"><div class="ico">📊</div><div><h3>الأداء العام</h3><p>تفاصيل جميع الموظفات</p></div></a>
+<a class="card shortcut" href="supervisor-alerts.html"><div class="ico">🔔</div><div><h3>التنبيهات</h3><p>${low.length} موظفات تحتاج متابعة</p></div></a>
+<a class="card shortcut" href="supervisor-development.html"><div class="ico">📝</div><div><h3>ملاحظات التطوير</h3><p>القوة والتحسين والإجراء المطلوب</p></div></a>
+<a class="card shortcut" href="supervisor-sessions.html"><div class="ico">💬</div><div><h3>الجلسات</h3><p>Coaching و Side by Side</p></div></a></div>
+<div class="section"><h2>التنبيهات والإجراءات المطلوبة</h2><a class="btn soft" href="supervisor-alerts.html">عرض الكل</a></div>
+<div class="card">${low.slice().sort((a,b)=>a.score-b.score).map(e=>`<div class="alert ${e.score<65?'red':'orange'}"><div class="pill low">${e.score}%</div><div><h3>${e.name}</h3><p>${actionFor(e)}</p></div><a class="btn soft" href="supervisor-employee.html?id=${e.id}">فتح الملف</a></div>`).join('')}</div>
+<div class="section"><h2>ملخص الفريق</h2></div><div class="card tablewrap"><table class="table"><tr><th>الموظفة</th><th>الأداء</th><th>التصنيف</th><th>Quality</th><th>AHT</th><th>الإجراء</th></tr>${S.employees.map(e=>`<tr><td><a href="supervisor-employee.html?id=${e.id}"><b>${e.name}</b></a></td><td><b class="score ${textCls(e.score)}">${e.score}%</b></td><td><span class="pill ${cls(e.score)}">${status(e.score)}</span></td><td>${e.quality}%</td><td>${e.aht}</td><td><a class="btn soft" href="supervisor-employee.html?id=${e.id}">المتابعة</a></td></tr>`).join('')}</table></div>`);
+</script></html>

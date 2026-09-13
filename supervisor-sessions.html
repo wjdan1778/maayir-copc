@@ -41,4 +41,6 @@ function kpiCard(e,key,name,target){let val=e[key];let width=key==='aht'?Math.mi
 function parseTime(t){let a=t.split(':').map(Number);return a[0]*60+a[1]}
 function openNote(e){alert(actionFor(e))}
 function enter(){let r=document.getElementById('role').value;location.href=r==='supervisor'?'supervisor.html':'employee-home.html'}
-</script><script>location.replace('supervisor-development.html');</script></html>
+</script><script>
+supShell('الجلسات','sessions',`<div class="hero"><h1>الجلسات</h1><p>Coaching Session للأخطاء الجسيمة، وSide by Side بشكل ربع سنوي.</p></div><div class="grid2"><div class="card"><h3>💬 Coaching Session</h3><p class="muted">الاستماع للمكالمة، توضيح السبب، الإرشادات والتطبيق العملي والمتابعة.</p><a class="btn full" href="supervisor-alerts.html">اختيار موظفة من التنبيهات</a></div><div class="card"><h3>👥 Side by Side</h3><p class="muted">جلسة ربع سنوية مع الموظفة والاستماع للمكالمات ثم تقييمها في Speechlog.</p><a class="btn purple full" href="supervisor-employees.html">اختيار الموظفة</a></div></div>`);
+</script></html>
