@@ -1,21 +1,177 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#08786d"><title>معايير COPC</title>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#08786d">
+<title>معايير COPC</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#e8e8ed;font-family:-apple-system,BlinkMacSystemFont,"Tahoma",Arial,sans-serif;color:#18345e}.app{max-width:430px;min-height:100vh;margin:auto;background:#f7f7f8}.page{display:none;min-height:100vh;padding:24px 18px 100px}.page.on{display:block}.welcome{text-align:center;background:linear-gradient(145deg,#fff,#eef8f2);padding-top:48px}.logo{font-size:34px;font-weight:900;color:#122b63}.logo span{color:#08786d}.tag{color:#08786d;font-weight:700;margin:8px}.art{height:300px;display:grid;place-items:center;font-size:92px}.btn{display:block;width:100%;border:0;border-radius:30px;padding:16px;background:#08786d;color:#fff;font-size:17px;font-weight:800;cursor:pointer}.text{color:#647187;line-height:1.9}.head{display:flex;gap:12px;align-items:center;margin-bottom:16px}.head>div:nth-child(2){flex:1}.title{font-size:25px;font-weight:900}.sub{font-size:13px;color:#6e7b91}.back{border:0;background:none;font-size:30px;cursor:pointer;color:#122b63}.bell{width:42px;height:42px;border-radius:50%;background:#c9b9e8;display:grid;place-items:center}.card{background:#fff;border-radius:18px;padding:16px;margin:11px 0;box-shadow:0 3px 15px #00000008}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.kpi{background:#f8f9fb;border-radius:14px;padding:10px;text-align:center}.kpi b{font-size:12px;display:block;min-height:30px}.ring{width:68px;height:68px;border:7px solid #86cf42;border-radius:50%;display:grid;place-items:center;margin:8px auto;font-weight:900}.tiny{font-size:10px;color:#6e7b91}.bar{height:9px;background:#e8ebf0;border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:#86cf42}.notice{background:#dff3e9;border-radius:15px;padding:14px;line-height:1.85}.step{display:flex;gap:12px;margin:17px 0}.num{min-width:29px;height:29px;border-radius:50%;background:#c9b9e8;display:grid;place-items:center;font-weight:900}.done .num{background:#86cf42}.step small{color:#6e7b91;line-height:1.6}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:76px;background:#fff;border-top:1px solid #e5e8ed;display:none;justify-content:space-around;align-items:center;z-index:5}.nav button{border:0;background:none;color:#8993a5;font-size:10px;font-weight:700}.nav b{display:block;font-size:21px}.nav button.active{color:#08786d}
-</style></head><body><main class="app">
-<section id="welcome" class="page welcome on"><div class="logo">معايير <span>COPC</span></div><div class="tag">تطوير الموظفين نحو أداء أفضل</div><div class="art">📈</div><p class="text">من خلال التمكين، التغذية الراجعة المستمرة، والتدريب الهادف، نساعدك على تحقيق أفضل نسخة من أدائك.</p><br><button class="btn" id="start">ابدأ رحلتك معنا ←</button></section>
-<section id="home" class="page"><div class="head"><div><div class="title">أداء الموظفة</div><div class="sub">متابعة الأداء والتطوير المستمر</div></div><div class="bell">🔔</div></div>
-<div class="card"><b>Monthly Performance</b><div class="sub">أكتوبر 2024</div><div class="grid" style="margin-top:10px">
-<div class="kpi"><b>AHT — متوسط وقت المكالمات</b><div class="ring">3:12</div><span class="tiny">Target 3:30 · Weight 20%</span></div><div class="kpi"><b>Absenteeism — الغياب</b><div class="ring">96%</div><span class="tiny">Target 95% · Weight 25%</span></div>
-<div class="kpi"><b>Quality — الجودة</b><div class="ring">82%</div><span class="tiny">Target 80% · Weight 35%</span></div><div class="kpi"><b>Utilization — الانشغالية</b><div class="ring">78%</div><span class="tiny">Target 85% · Weight 20%</span></div></div></div>
-<div class="card"><b>C-SAT — رضا العميل</b><b style="float:left">92%</b><div class="bar"><i style="width:92%"></i></div><br><b>FCR — من أول مكالمة</b><b style="float:left">88%</b><div class="bar"><i style="width:88%"></i></div></div>
-<div class="card"><b>نقاط القوة</b><p class="text">✓ جودة عالية في التعامل مع العملاء<br>✓ معدلات رضا مرتفعة</p></div><div class="card"><b>فرص التحسين</b><p class="text">• رفع نسبة الاستغلال<br>• تقليل متوسط مدة المكالمة</p></div>
+*{box-sizing:border-box}body{margin:0;background:#e7e8ed;font-family:-apple-system,BlinkMacSystemFont,"Tahoma",Arial,sans-serif;color:#17345f}.app{max-width:430px;min-height:100vh;margin:auto;background:#f7f8f9}.screen{display:none;min-height:100vh;padding:22px 17px 105px}.screen.active{display:block}.login{padding-top:60px;text-align:center;background:linear-gradient(145deg,#fff,#edf8f2)}.logo{font-size:35px;font-weight:900}.logo span{color:#08786d}.tag{color:#08786d;font-weight:800;margin:8px 0 35px}.login-card{background:#fff;border-radius:22px;padding:20px;box-shadow:0 8px 30px #18345e10;text-align:right}.select,.input{width:100%;padding:14px;border:1px solid #dfe4ea;border-radius:13px;background:#fafbfc;font-size:15px}.btn{width:100%;border:0;border-radius:28px;padding:15px;background:#08786d;color:white;font-size:16px;font-weight:900;margin-top:18px}.head{display:flex;gap:12px;align-items:center;margin-bottom:17px}.headmain{flex:1}.title{font-size:24px;font-weight:900}.sub{font-size:12px;color:#6b778a;margin-top:4px}.avatar{width:43px;height:43px;border-radius:50%;background:#cbbce9;display:grid;place-items:center}.back{border:0;background:none;font-size:31px;color:#17345f}.card{background:#fff;border-radius:18px;padding:15px;margin:10px 0;box-shadow:0 3px 14px #18345e0a}.hero{background:#08786d;color:#fff;border-radius:20px;padding:18px}.hero .sub{color:#d7eee9}.grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.kpi{background:#f7f9fa;border-radius:14px;padding:10px;text-align:center}.kpi b{display:block;font-size:11px;min-height:30px}.ring{width:67px;height:67px;border:7px solid #86cf42;border-radius:50%;display:grid;place-items:center;margin:8px auto;font-weight:900}.tiny{font-size:9px;color:#68768b}.bar{height:9px;background:#e6eaf0;border-radius:8px;overflow:hidden}.bar i{display:block;height:100%;background:#86cf42}.row{display:flex;justify-content:space-between;align-items:center;margin:8px 0}.pill{padding:6px 10px;border-radius:18px;background:#e3f4dc;color:#417b2d;font-size:11px;font-weight:900}.danger{background:#ffe4e6;color:#a83a48}.notice{background:#dff3e9;padding:13px;border-radius:14px;line-height:1.8}.text{color:#65738a;line-height:1.8}.tabs{display:flex;gap:7px;margin-bottom:10px}.tab{border:0;background:#e9ecf1;padding:9px 13px;border-radius:20px;font-weight:800}.tab.sel{background:#c9b9e8}.step{display:flex;gap:11px;margin:16px 0}.num{min-width:28px;height:28px;border-radius:50%;background:#c9b9e8;display:grid;place-items:center;font-weight:900}.done .num{background:#86cf42}.step small{color:#69768a;line-height:1.6}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);max-width:430px;width:100%;height:76px;background:#fff;border-top:1px solid #e4e7eb;display:flex;justify-content:space-around;align-items:center;z-index:5}.nav button{border:0;background:none;color:#8993a4;font-size:10px;font-weight:800}.nav b{display:block;font-size:20px}.nav .on{color:#08786d}.hide{display:none!important}
+</style>
+<style>
+body{background:#eef1f4}
+@media(min-width:700px){.app{max-width:1180px;min-height:100vh;box-shadow:0 0 45px #17345e14}.screen{padding:35px 42px 120px}.nav{max-width:1180px}}
+.clickable{cursor:pointer;transition:.15s}.clickable:active{transform:scale(.99)}
+.toast{position:fixed;top:18px;left:50%;transform:translateX(-50%);background:#17345f;color:#fff;padding:12px 18px;border-radius:24px;z-index:20;box-shadow:0 8px 24px #0002;font-weight:800}
+</style>
+<link rel="manifest" href="manifest.json"></head>
+<body><div class="app">
+
+<section id="login" class="screen login active">
+<div class="logo">معايير <span>COPC</span></div><div class="tag">منصة تطوير الموظفين</div>
+<div class="login-card"><h3>تسجيل الدخول التجريبي</h3><label>نوع الحساب</label>
+<select id="role" class="select"><option value="employee">موظفة — سارة</option><option value="supervisor">مشرفة — نورة</option></select>
+<button class="btn" onclick="login()">دخول إلى النسخة التجريبية</button></div>
+<p class="sub">نسخة Demo — جميع البيانات تجريبية</p></section>
+
+<section id="employee" class="screen">
+<div class="head"><div class="headmain"><div class="title">مرحبًا سارة 👋</div><div class="sub">موظفة خدمة عملاء · فريق COPC</div></div><div class="avatar">👩🏻</div></div>
+<div class="hero"><b>أداء أكتوبر 2024</b><div class="sub">النتيجة الموزونة الحالية</div><div style="font-size:38px;font-weight:900">87.4%</div></div>
+<div class="card"><div class="row"><b>مؤشرات KPI</b><span class="pill">4 / 4 محدثة</span></div><div class="grid">
+<div class="kpi"><b>AHT — متوسط وقت المكالمات</b><div class="ring">3:12</div><span class="tiny">Target 3:30 · 20%</span></div>
+<div class="kpi"><b>Absenteeism — الغياب</b><div class="ring">96%</div><span class="tiny">Target 95% · 25%</span></div>
+<div class="kpi"><b>Quality — الجودة</b><div class="ring">82%</div><span class="tiny">Target 80% · 35%</span></div>
+<div class="kpi"><b>Utilization — الانشغالية</b><div class="ring">78%</div><span class="tiny">Target 85% · 20%</span></div></div></div>
+<div class="card"><b>C-SAT — رضا العميل</b><div class="row"><span>92%</span><span class="tiny">هدف 90%</span></div><div class="bar"><i style="width:92%"></i></div><br><b>FCR — من أول مكالمة</b><div class="row"><span>88%</span><span class="tiny">هدف 85%</span></div><div class="bar"><i style="width:88%"></i></div></div>
+<div class="card"><b>خطة التطوير</b><p class="text">التركيز هذا الشهر على إدارة وقت المكالمة ورفع الانشغالية.</p><span class="pill">تقدم الخطة 75%</span></div></section>
+
+<section id="employeeSessions" class="screen">
+<div class="head"><button class="back" onclick="show('employee')">‹</button><div class="headmain"><div class="title">جلساتي</div><div class="sub">Side by Side & Coaching</div></div></div>
+<div class="card"><div class="row"><b>Side by Side</b><span class="pill">مجدولة</span></div><p class="text">16 أكتوبر 2024 · 10:00 ص<br>الاستماع للمكالمات والتقييم في Speechlog.</p></div>
+<div class="card"><div class="row"><b>Coaching Session</b><span class="pill danger">مطلوبة</span></div><p class="text">خطأ مؤثر #4587 · 14 أكتوبر 2024<br>تصحيح السبب وتطبيق إرشادات عملية ومتابعة التقدم.</p></div></section>
+
+<section id="supervisor" class="screen">
+<div class="head"><div class="headmain"><div class="title">لوحة المشرفة</div><div class="sub">نورة · فريق خدمة العملاء</div></div><div class="avatar">👩🏻‍💼</div></div>
+<div class="grid"><div class="card"><div class="sub">عدد الموظفات</div><div style="font-size:28px;font-weight:900">18</div></div><div class="card"><div class="sub">متوسط الأداء</div><div style="font-size:28px;font-weight:900">79.4%</div></div></div>
+<div class="card"><div class="row"><b>تنبيهات تحتاج متابعة</b><span class="pill danger">3</span></div><p class="text">• 5 موظفات تحت Target<br>• 3 جلسات Coaching مطلوبة<br>• سارة ضمن أعلى أداء</p></div>
+<div class="card"><div class="row"><b>الموظفات التابعة للمشرفة</b><span class="pill">10 موظفات</span></div>
+<div class="row" onclick="openEmployee(0)" style="cursor:pointer"><span>سارة أحمد</span><span class="pill">97.8% ›</span></div><div class="bar"><i style="width:98%"></i></div>
+<div class="row" onclick="openEmployee(1)" style="cursor:pointer"><span>ريم محمد</span><span class="pill">94.6% ›</span></div><div class="bar"><i style="width:95%"></i></div>
+<div class="row" onclick="openEmployee(2)" style="cursor:pointer"><span>نورة خالد</span><span class="pill">91.3% ›</span></div><div class="bar"><i style="width:91%"></i></div>
+<div class="row" onclick="openEmployee(3)" style="cursor:pointer"><span>جود عبدالله</span><span class="pill">88.7% ›</span></div><div class="bar"><i style="width:89%"></i></div>
+<div class="row" onclick="openEmployee(4)" style="cursor:pointer"><span>هند علي</span><span class="pill">84.2% ›</span></div><div class="bar"><i style="width:84%"></i></div>
+<div class="row" onclick="openEmployee(5)" style="cursor:pointer"><span>لطيفة سالم</span><span class="pill">79.5% ›</span></div><div class="bar"><i style="width:80%"></i></div>
+<div class="row" onclick="openEmployee(6)" style="cursor:pointer"><span>مشاعل حسن</span><span class="pill danger">74.1% ›</span></div><div class="bar"><i style="width:74%"></i></div>
+<div class="row" onclick="openEmployee(7)" style="cursor:pointer"><span>أمل يوسف</span><span class="pill danger">68.9% ›</span></div><div class="bar"><i style="width:69%"></i></div>
+<div class="row" onclick="openEmployee(8)" style="cursor:pointer"><span>رغد إبراهيم</span><span class="pill danger">61.7% ›</span></div><div class="bar"><i style="width:62%"></i></div>
+<div class="row" onclick="openEmployee(9)" style="cursor:pointer"><span>شهد ماجد</span><span class="pill danger">53.4% ›</span></div><div class="bar"><i style="width:53%"></i></div>
+</div></div>
+<button class="btn" onclick="show('manage')">إدارة أداء سارة →</button></section>
+
+<section id="employeeDetail" class="screen">
+<div class="head"><button class="back" onclick="show('supervisor')">‹</button><div class="headmain"><div id="detailName" class="title">ملف الموظفة</div><div id="detailSub" class="sub">تفاصيل الأداء</div></div><div class="avatar">👩🏻</div></div>
+<div class="hero"><b>ملخص الأداء</b><div class="sub">النتيجة الموزونة</div><div id="detailScore" style="font-size:38px;font-weight:900">97.8%</div></div>
+<div class="card"><div class="row"><b>KPI</b><span class="pill">شهري</span></div>
+<div class="grid">
+<div class="kpi"><b>AHT</b><div id="dAHT" style="font-size:22px;font-weight:900;margin:15px 0">3:05</div><span class="tiny">Target 3:30 · 20%</span></div>
+<div class="kpi"><b>Absenteeism</b><div id="dAbs" style="font-size:22px;font-weight:900;margin:15px 0">98%</div><span class="tiny">Target 95% · 25%</span></div>
+<div class="kpi"><b>Quality</b><div id="dQuality" style="font-size:22px;font-weight:900;margin:15px 0">94%</div><span class="tiny">Target 80% · 35%</span></div>
+<div class="kpi"><b>Utilization</b><div id="dUtil" style="font-size:22px;font-weight:900;margin:15px 0">91%</div><span class="tiny">Target 85% · 20%</span></div></div></div>
+<div class="card"><b>C-SAT / FCR</b><div class="row"><span>C-SAT</span><b id="dCSAT">96%</b></div><div class="bar"><i id="dCSATBar" style="width:96%"></i></div><br><div class="row"><span>FCR</span><b id="dFCR">93%</b></div><div class="bar"><i id="dFCRBar" style="width:93%"></i></div></div>
+<div class="card"><div class="row"><b>Monthly Performance Review</b><span class="pill">مكتملة</span></div><p class="text">نقاط القوة: جودة عالية ورضا عملاء ممتاز.<br>فرصة التحسين: المحافظة على ثبات الأداء.</p></div>
+<div class="card"><div class="row"><b>الجلسات</b><span class="pill">2</span></div><p class="text">✓ Side by Side — مكتملة<br>✓ Coaching Session — مكتملة<br>آخر متابعة: 14 أكتوبر 2024</p></div>
+<button class="btn" onclick="editSelected()">تعديل وحفظ بيانات الموظفة</button><button class="btn" style="background:#86cf42;color:#17345f" onclick="addSession()">إضافة Coaching Session</button>
 </section>
-<section id="side" class="page"><div class="head"><button class="back" onclick="go('home')">‹</button><div><div class="title">Side by Side</div><div class="sub">جلسة تقييم ربع سنوية</div></div><div class="bell">👥</div></div><div class="notice">بشكل ربع سنوي يتم عقد الجلسة من خلال الجلوس مع الموظفة والاستماع للمكالمات وتقديم الملاحظات اللازمة، وبعدها تقييم المكالمة على نظام <b>Speechlog</b>.</div><div class="card"><b>جلسة الربع الرابع 2024</b><p class="text">📅 16 أكتوبر 2024<br>🕙 10:00 ص — 12:00 م</p></div><div class="card"><b>خطوات الجلسة</b><div class="step done"><span class="num">1</span><div><b>الجلوس مع الموظفة</b><br><small>مراجعة الهدف وتحديد المكالمات.</small></div></div><div class="step done"><span class="num">2</span><div><b>الاستماع إلى المكالمات</b><br><small>الاستماع معًا إلى مكالمات مختارة.</small></div></div><div class="step"><span class="num">3</span><div><b>التغذية الراجعة</b><br><small>مناقشة نقاط القوة وفرص التحسين.</small></div></div><div class="step"><span class="num">4</span><div><b>التقييم في Speechlog</b><br><small>تسجيل التقييم والملاحظات.</small></div></div></div></section>
-<section id="coach" class="page"><div class="head"><button class="back" onclick="go('home')">‹</button><div><div class="title">Coaching Session</div><div class="sub">تصحيح فوري وتطوير مستمر</div></div><div class="bell">💬</div></div><div class="notice">عند رصد خطأ جسيم يتم فورًا عقد جلسة تدريبية بهدف التصحيح والتطوير، وتكون مسجلة على نظام <b>Speechlog</b>.</div><div class="card"><b>جلسة تدريبية — خطأ مؤثر</b><p class="text">الحالة #4587 · 14 أكتوبر 2024 · 09:30 ص</p><b style="color:#b23b48">مطلوبة</b></div><div class="card"><b>محتوى الجلسة</b><div class="step done"><span class="num">1</span><div><b>الاستماع للمكالمة</b><br><small>مراجعة تفاصيل الخطأ.</small></div></div><div class="step"><span class="num">2</span><div><b>توضيح السبب وكيفية تجنبه</b><br><small>مناقشة السبب الجذري.</small></div></div><div class="step"><span class="num">3</span><div><b>إرشادات وتطبيقات عملية</b><br><small>التصحيح والتدريب العملي.</small></div></div><div class="step"><span class="num">4</span><div><b>متابعة التقدم</b><br><small>مراجعة التحسن في الجلسات القادمة.</small></div></div></div><div class="card"><b>متابعة التقدم — 75%</b><div class="bar" style="margin-top:10px"><i style="width:75%"></i></div></div></section>
-<nav id="nav" class="nav"><button id="nh" onclick="go('home')"><b>⌂</b>الرئيسية</button><button onclick="go('home')"><b>▥</b>التطوير</button><button id="ns" onclick="go('side')"><b>▣</b>الجلسات</button><button id="nc" onclick="go('coach')"><b>💬</b>تدريب</button></nav>
-</main>
+<section id="manage" class="screen">
+<div class="head"><button class="back" onclick="show('supervisor')">‹</button><div class="headmain"><div class="title">إدارة سارة</div><div class="sub">تعديل KPI والجلسات</div></div></div>
+<div class="tabs"><button class="tab sel" onclick="tab(this,'kpis')">KPI</button><button class="tab" onclick="tab(this,'reviews')">المراجعة</button><button class="tab" onclick="tab(this,'newsession')">جلسة جديدة</button></div>
+<div id="kpis" class="card"><b>نتائج KPI</b><label class="sub">Quality</label><input class="input" value="82%"><label class="sub">Utilization</label><input class="input" value="78%"><label class="sub">C-SAT</label><input class="input" value="92%"><label class="sub">FCR</label><input class="input" value="88%"><button class="btn" onclick="saveDemo()">حفظ التعديلات</button></div>
+<div id="reviews" class="card hide"><b>Monthly Performance Review</b><p class="text">✓ نقاط القوة: جودة التعامل ورضا العملاء<br>• فرصة التحسين: الانشغالية<br>• خطة العمل: تدريب على إدارة الوقت ومتابعة أسبوعية.</p><span class="pill">مراجعة أكتوبر مكتملة</span></div>
+<div id="newsession" class="card hide"><b>إنشاء جلسة</b><label class="sub">نوع الجلسة</label><select class="select"><option>Side by Side</option><option>Coaching Session</option></select><label class="sub">ملاحظات</label><textarea class="input" rows="4">الاستماع للمكالمة وتقديم الملاحظات اللازمة.</textarea><button class="btn" onclick="saveDemo()">حفظ الجلسة</button></div></section>
+
+<nav id="nav" class="nav hide"><button id="nh" onclick="navHome()"><b>⌂</b>الرئيسية</button><button id="ns" onclick="navSessions()"><b>▣</b>الجلسات</button><button onclick="logout()"><b>↩</b>خروج</button></nav>
+</div>
 <script>
-const pages=['welcome','home','side','coach'];
-function go(id){pages.forEach(x=>document.getElementById(x).classList.remove('on'));document.getElementById(id).classList.add('on');document.getElementById('nav').style.display=id==='welcome'?'none':'flex';document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));if(id==='home')document.getElementById('nh').classList.add('active');if(id==='side')document.getElementById('ns').classList.add('active');if(id==='coach')document.getElementById('nc').classList.add('active');window.scrollTo(0,0)}
-document.getElementById('start').addEventListener('click',()=>go('home'));
-</script></body></html>
+let current='';
+function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0)}
+function login(){current=document.getElementById('role').value;show(current==='employee'?'employee':'supervisor');document.getElementById('nav').classList.remove('hide');setNav('nh')}
+function logout(){current='';show('login');document.getElementById('nav').classList.add('hide')}
+function navHome(){show(current==='employee'?'employee':'supervisor');setNav('nh')}
+function navSessions(){show(current==='employee'?'employeeSessions':'manage');setNav('ns')}
+function setNav(id){document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('on'));document.getElementById(id).classList.add('on')}
+function tab(el,id){document.querySelectorAll('.tab').forEach(b=>b.classList.remove('sel'));el.classList.add('sel');['kpis','reviews','newsession'].forEach(x=>document.getElementById(x).classList.add('hide'));document.getElementById(id).classList.remove('hide')}
+function saveDemo(){
+ const d=getDB(), e=d.employees[selectedEmployee]||d.employees[0];
+ const inputs=document.querySelectorAll('#kpis .input');
+ if(inputs.length>=4){e.quality=inputs[0].value;e.util=inputs[1].value;e.csat=inputs[2].value;e.fcr=inputs[3].value;
+ const n=[e.quality,e.util,e.csat,e.fcr].map(x=>parseFloat(x)||0);e.score=(n.reduce((a,b)=>a+b,0)/n.length).toFixed(1)+'%';}
+ saveDB(d);toast('تم الحفظ بنجاح ✓');
+}
+
+
+const employees=[
+{name:"سارة أحمد",score:"97.8%",aht:"3:05",abs:"98%",quality:"94%",util:"91%",csat:"96%",fcr:"93%"},
+{name:"ريم محمد",score:"94.6%",aht:"3:18",abs:"97%",quality:"91%",util:"89%",csat:"94%",fcr:"91%"},
+{name:"نورة خالد",score:"91.3%",aht:"3:26",abs:"96%",quality:"88%",util:"87%",csat:"92%",fcr:"89%"},
+{name:"جود عبدالله",score:"88.7%",aht:"3:31",abs:"95%",quality:"85%",util:"84%",csat:"90%",fcr:"87%"},
+{name:"هند علي",score:"84.2%",aht:"3:42",abs:"94%",quality:"81%",util:"82%",csat:"87%",fcr:"84%"},
+{name:"لطيفة سالم",score:"79.5%",aht:"3:58",abs:"92%",quality:"78%",util:"79%",csat:"83%",fcr:"80%"},
+{name:"مشاعل حسن",score:"74.1%",aht:"4:10",abs:"90%",quality:"73%",util:"75%",csat:"79%",fcr:"76%"},
+{name:"أمل يوسف",score:"68.9%",aht:"4:25",abs:"88%",quality:"69%",util:"70%",csat:"75%",fcr:"71%"},
+{name:"رغد إبراهيم",score:"61.7%",aht:"4:46",abs:"85%",quality:"62%",util:"65%",csat:"68%",fcr:"64%"},
+{name:"شهد ماجد",score:"53.4%",aht:"5:02",abs:"81%",quality:"54%",util:"57%",csat:"61%",fcr:"58%"}
+];
+let selectedEmployee=0;
+function openEmployee(i){
+ selectedEmployee=i; const d=getDB(); const e=d.employees[i]||employees[i];
+ document.getElementById('detailName').textContent=e.name;
+ document.getElementById('detailSub').textContent='ملف الموظفة · متابعة المشرفة';
+ document.getElementById('detailScore').textContent=e.score;
+ document.getElementById('dAHT').textContent=e.aht;
+ document.getElementById('dAbs').textContent=e.abs;
+ document.getElementById('dQuality').textContent=e.quality;
+ document.getElementById('dUtil').textContent=e.util;
+ document.getElementById('dCSAT').textContent=e.csat;
+ document.getElementById('dFCR').textContent=e.fcr;
+ document.getElementById('dCSATBar').style.width=e.csat;
+ document.getElementById('dFCRBar').style.width=e.fcr;
+ show('employeeDetail'); setNav('nh');
+}
+function openManageFromDetail(){show('manage');}
+</script>
+<script>
+/* COPC Demo data layer — stored in this browser via localStorage */
+const COPC_KEY='maayir-copc-demo-v1';
+const baseEmployees=[
+["سارة أحمد","97.8%","3:05","98%","94%","91%","96%","93%"],
+["ريم محمد","94.6%","3:18","97%","91%","89%","94%","91%"],
+["نورة خالد","91.3%","3:26","96%","88%","87%","92%","89%"],
+["جود عبدالله","88.7%","3:31","95%","85%","84%","90%","87%"],
+["هند علي","84.2%","3:42","94%","81%","82%","87%","84%"],
+["لطيفة سالم","79.5%","3:58","92%","78%","79%","83%","80%"],
+["مشاعل حسن","74.1%","4:10","90%","73%","75%","79%","76%"],
+["أمل يوسف","68.9%","4:25","88%","69%","70%","75%","71%"],
+["رغد إبراهيم","61.7%","4:46","85%","62%","65%","68%","64%"],
+["شهد ماجد","53.4%","5:02","81%","54%","57%","61%","58%"]
+];
+function getDB(){
+  let d=JSON.parse(localStorage.getItem(COPC_KEY)||'null');
+  if(!d)d={employees:baseEmployees.map(x=>({name:x[0],score:x[1],aht:x[2],abs:x[3],quality:x[4],util:x[5],csat:x[6],fcr:x[7]})),sessions:[],reviews:[]};
+  return d;
+}
+function saveDB(d){localStorage.setItem(COPC_KEY,JSON.stringify(d));}
+function toast(t){let x=document.createElement('div');x.className='toast';x.textContent=t;document.body.appendChild(x);setTimeout(()=>x.remove(),1800)}
+function refreshSupervisor(){
+  const d=getDB(), list=document.querySelector('#supervisor .card:nth-of-type(3)');
+  if(!list)return;
+  const avg=(d.employees.reduce((s,e)=>s+parseFloat(e.score),0)/d.employees.length).toFixed(1);
+  const stat=document.querySelector('#supervisor .card:nth-of-type(1) .card');
+}
+function editSelected(){
+  const d=getDB(), e=d.employees[selectedEmployee];
+  const fields=[['AHT','aht'],['Absenteeism','abs'],['Quality','quality'],['Utilization','util'],['C-SAT','csat'],['FCR','fcr']];
+  const vals=fields.map(([label,key])=>prompt(label+' للموظفة '+e.name,e[key]));
+  if(vals.some(v=>v===null))return;
+  fields.forEach(([,key],i)=>e[key]=vals[i]);
+  const nums=[parseFloat(e.quality)||0,parseFloat(e.util)||0,parseFloat(e.csat)||0,parseFloat(e.fcr)||0];
+  e.score=(nums.reduce((a,b)=>a+b,0)/nums.length).toFixed(1)+'%';
+  saveDB(d); openEmployee(selectedEmployee); toast('تم حفظ بيانات الموظفة ✓');
+}
+function addSession(){
+  const d=getDB();
+  d.sessions.push({employee:d.employees[selectedEmployee].name,type:'Coaching Session',date:new Date().toLocaleDateString('ar-SA'),status:'مجدولة'});
+  saveDB(d); toast('تم إنشاء الجلسة وحفظها ✓');
+}
+function resetDemo(){if(confirm('إعادة بيانات النسخة التجريبية؟')){localStorage.removeItem(COPC_KEY);location.reload()}}
+</script>
+<script>if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js")}</script></body></html>
