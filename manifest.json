@@ -1,10 +1,12 @@
 {
-  "name":"معايير COPC — تطوير الموظفين",
-  "short_name":"Maayir COPC",
-  "start_url":"./index.html",
-  "display":"standalone",
-  "background_color":"#eef1f4",
-  "theme_color":"#08786d",
-  "lang":"ar",
-  "dir":"rtl"
+  "name": "معايير COPC — منصة تطوير الموظفين",
+  "short_name": "معايير COPC",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f7f8",
+  "theme_color": "#0d766d",
+  "dir": "rtl",
+  "lang": "ar",
+  "description": "منصة تطوير الموظفين وإدارة الأداء وKPI والجلسات والتقارير."
 }

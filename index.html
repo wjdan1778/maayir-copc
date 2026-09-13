@@ -3,175 +3,267 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#08786d">
-<title>معايير COPC</title>
+<meta name="theme-color" content="#0d766d">
+<meta name="description" content="معايير COPC — منصة تطوير الموظفين">
+<link rel="manifest" href="manifest.json">
+<title>معايير COPC | منصة تطوير الموظفين</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#e7e8ed;font-family:-apple-system,BlinkMacSystemFont,"Tahoma",Arial,sans-serif;color:#17345f}.app{max-width:430px;min-height:100vh;margin:auto;background:#f7f8f9}.screen{display:none;min-height:100vh;padding:22px 17px 105px}.screen.active{display:block}.login{padding-top:60px;text-align:center;background:linear-gradient(145deg,#fff,#edf8f2)}.logo{font-size:35px;font-weight:900}.logo span{color:#08786d}.tag{color:#08786d;font-weight:800;margin:8px 0 35px}.login-card{background:#fff;border-radius:22px;padding:20px;box-shadow:0 8px 30px #18345e10;text-align:right}.select,.input{width:100%;padding:14px;border:1px solid #dfe4ea;border-radius:13px;background:#fafbfc;font-size:15px}.btn{width:100%;border:0;border-radius:28px;padding:15px;background:#08786d;color:white;font-size:16px;font-weight:900;margin-top:18px}.head{display:flex;gap:12px;align-items:center;margin-bottom:17px}.headmain{flex:1}.title{font-size:24px;font-weight:900}.sub{font-size:12px;color:#6b778a;margin-top:4px}.avatar{width:43px;height:43px;border-radius:50%;background:#cbbce9;display:grid;place-items:center}.back{border:0;background:none;font-size:31px;color:#17345f}.card{background:#fff;border-radius:18px;padding:15px;margin:10px 0;box-shadow:0 3px 14px #18345e0a}.hero{background:#08786d;color:#fff;border-radius:20px;padding:18px}.hero .sub{color:#d7eee9}.grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.kpi{background:#f7f9fa;border-radius:14px;padding:10px;text-align:center}.kpi b{display:block;font-size:11px;min-height:30px}.ring{width:67px;height:67px;border:7px solid #86cf42;border-radius:50%;display:grid;place-items:center;margin:8px auto;font-weight:900}.tiny{font-size:9px;color:#68768b}.bar{height:9px;background:#e6eaf0;border-radius:8px;overflow:hidden}.bar i{display:block;height:100%;background:#86cf42}.row{display:flex;justify-content:space-between;align-items:center;margin:8px 0}.pill{padding:6px 10px;border-radius:18px;background:#e3f4dc;color:#417b2d;font-size:11px;font-weight:900}.danger{background:#ffe4e6;color:#a83a48}.notice{background:#dff3e9;padding:13px;border-radius:14px;line-height:1.8}.text{color:#65738a;line-height:1.8}.tabs{display:flex;gap:7px;margin-bottom:10px}.tab{border:0;background:#e9ecf1;padding:9px 13px;border-radius:20px;font-weight:800}.tab.sel{background:#c9b9e8}.step{display:flex;gap:11px;margin:16px 0}.num{min-width:28px;height:28px;border-radius:50%;background:#c9b9e8;display:grid;place-items:center;font-weight:900}.done .num{background:#86cf42}.step small{color:#69768a;line-height:1.6}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);max-width:430px;width:100%;height:76px;background:#fff;border-top:1px solid #e4e7eb;display:flex;justify-content:space-around;align-items:center;z-index:5}.nav button{border:0;background:none;color:#8993a4;font-size:10px;font-weight:800}.nav b{display:block;font-size:20px}.nav .on{color:#08786d}.hide{display:none!important}
-</style>
-<style>
-body{background:#eef1f4}
-@media(min-width:700px){.app{max-width:1180px;min-height:100vh;box-shadow:0 0 45px #17345e14}.screen{padding:35px 42px 120px}.nav{max-width:1180px}}
-.clickable{cursor:pointer;transition:.15s}.clickable:active{transform:scale(.99)}
-.toast{position:fixed;top:18px;left:50%;transform:translateX(-50%);background:#17345f;color:#fff;padding:12px 18px;border-radius:24px;z-index:20;box-shadow:0 8px 24px #0002;font-weight:800}
-</style>
-<link rel="manifest" href="manifest.json"></head>
-<body><div class="app">
+:root{--teal:#0d766d;--teal2:#18a394;--mint:#e8f6f3;--lav:#e9e2f7;--green:#75bd4b;--ink:#17345f;--muted:#718096;--bg:#f4f7f8;--card:#fff;--line:#e3e9ed;--danger:#d95c68;--amber:#d69b28;--shadow:0 10px 30px rgba(23,52,95,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e9edf0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Tahoma",Arial,sans-serif}
+button,input,select,textarea{font:inherit}.app{max-width:1180px;min-height:100vh;margin:auto;background:var(--bg);position:relative}.screen{display:none;min-height:100vh;padding:28px 22px 110px}.screen.active{display:block}.login{display:grid;place-items:center;padding:30px;background:linear-gradient(145deg,#fafffe,#eeeaf8)}.login-wrap{width:min(460px,100%)}.brand{text-align:center;margin-bottom:22px}.brand-mark{width:78px;height:78px;border-radius:25px;background:linear-gradient(145deg,var(--teal),#159b8e);color:#fff;display:grid;place-items:center;font-weight:950;font-size:22px;margin:auto;box-shadow:0 14px 35px #0d766d35}.brand h1{margin:15px 0 4px;font-size:30px}.brand h1 span{color:var(--teal)}.brand p{margin:0;color:var(--muted)}.login-card{background:var(--card);padding:24px;border-radius:26px;box-shadow:var(--shadow);border:1px solid #fff}.label{display:block;font-size:13px;font-weight:800;margin:14px 0 7px}.input,.select,.textarea{width:100%;border:1px solid var(--line);background:#fbfcfd;border-radius:14px;padding:13px 14px;color:var(--ink);outline:none}.input:focus,.select:focus,.textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px #0d766d15}.btn{border:0;border-radius:14px;padding:13px 17px;background:var(--teal);color:#fff;font-weight:900;cursor:pointer}.btn.full{width:100%;margin-top:16px}.btn.secondary{background:#edf1f4;color:var(--ink)}.btn.ghost{background:transparent;color:var(--teal)}.btn.danger{background:#fff0f1;color:var(--danger)}.topbar{display:flex;align-items:center;gap:13px;margin-bottom:18px}.avatar{width:46px;height:46px;border-radius:15px;background:var(--lav);display:grid;place-items:center;font-weight:900}.topmain{flex:1}.title{font-size:25px;font-weight:950}.sub{font-size:12px;color:var(--muted);margin-top:4px}.top-actions{display:flex;gap:8px}.iconbtn{border:1px solid var(--line);background:#fff;border-radius:13px;width:43px;height:43px;cursor:pointer;color:var(--ink)}.hero{background:linear-gradient(135deg,#0d766d,#169c8d);color:#fff;border-radius:24px;padding:22px;box-shadow:0 14px 30px #0d766d20}.hero .sub{color:#d9f1ee}.hero-row{display:flex;align-items:center;justify-content:space-between;gap:20px}.score{font-size:46px;font-weight:950;line-height:1}.hero-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:17px}.hero-actions .btn{background:#ffffff20;border:1px solid #ffffff35}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:22px 0 10px}.section-head h2{font-size:17px;margin:0}.section-head small{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}.card{background:var(--card);border:1px solid #fff;border-radius:20px;padding:16px;box-shadow:var(--shadow)}.metric{min-height:130px}.metric .name{font-size:12px;font-weight:850;color:var(--muted);line-height:1.5}.metric .value{font-size:26px;font-weight:950;margin:10px 0 4px}.target{font-size:11px;color:var(--muted)}.progress{height:8px;background:#e9eef1;border-radius:99px;overflow:hidden;margin-top:10px}.progress i{display:block;height:100%;border-radius:99px;background:var(--green)}.progress.warn i{background:var(--amber)}.progress.bad i{background:var(--danger)}.twocol{display:grid;grid-template-columns:1.2fr .8fr;gap:12px}.list{display:grid;gap:8px}.list-row{display:flex;align-items:center;gap:10px;padding:12px;border:1px solid var(--line);border-radius:14px;background:#fbfcfd}.list-row .grow{flex:1}.pill{display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border-radius:99px;font-size:11px;font-weight:900;background:var(--mint);color:var(--teal)}.pill.warn{background:#fff4dc;color:#9a6a10}.pill.bad{background:#ffe7e9;color:#a93e4b}.pill.lav{background:var(--lav);color:#6d57a1}.notice{padding:13px 15px;border-radius:15px;background:#edf8f4;line-height:1.8;font-size:13px}.tabs{display:flex;gap:7px;overflow:auto;padding-bottom:2px}.tab{border:0;background:#e9eef1;color:var(--muted);padding:9px 13px;border-radius:99px;font-weight:850;white-space:nowrap;cursor:pointer}.tab.active{background:var(--lav);color:#624d98}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:13px}.search{flex:1;min-width:190px}.employees{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.employee{cursor:pointer;transition:.15s}.employee:hover{transform:translateY(-2px)}.employee-top{display:flex;align-items:center;gap:10px}.employee .avatar{width:42px;height:42px}.employee .grow{flex:1}.score-mini{font-size:22px;font-weight:950}.rankbar{height:9px;background:#e8edf0;border-radius:99px;overflow:hidden;margin:12px 0 8px}.rankbar i{display:block;height:100%;background:linear-gradient(90deg,var(--green),var(--teal2));border-radius:99px}.employee-foot{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted)}.kpi-table{display:grid;gap:9px}.kpi-row{display:grid;grid-template-columns:1.3fr .7fr .7fr 1fr;gap:8px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:14px;background:#fbfcfd;font-size:12px}.kpi-row b{font-size:12px}.review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.review-box{padding:13px;border-radius:15px;background:#fafbfc;border:1px solid var(--line)}.review-box b{display:block;margin-bottom:6px}.session{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}.session:last-child{border-bottom:0}.session-icon{width:40px;height:40px;border-radius:13px;background:var(--lav);display:grid;place-items:center}.modal-back{position:fixed;inset:0;background:#0b1628aa;display:none;align-items:flex-end;justify-content:center;z-index:50;padding:14px}.modal-back.open{display:flex}.modal{width:min(620px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:24px;padding:20px;box-shadow:0 20px 60px #0003}.modal-head{display:flex;justify-content:space-between;align-items:center}.modal-head h3{margin:0}.modal-actions{display:flex;gap:8px;justify-content:flex-start;margin-top:15px}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(1180px,100%);height:76px;background:#ffffffed;backdrop-filter:blur(14px);border-top:1px solid var(--line);display:flex;justify-content:space-around;align-items:center;z-index:20}.nav button{border:0;background:none;color:#8b96a5;font-size:10px;font-weight:900;cursor:pointer}.nav b{display:block;font-size:19px;margin-bottom:2px}.nav .on{color:var(--teal)}.toast{position:fixed;top:18px;left:50%;transform:translateX(-50%);background:#17345f;color:#fff;padding:11px 16px;border-radius:99px;z-index:80;font-weight:850;box-shadow:0 10px 30px #0002}.hide{display:none!important}.empty{text-align:center;padding:30px;color:var(--muted)}@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.twocol{grid-template-columns:1fr}.employees{grid-template-columns:1fr}.kpi-row{grid-template-columns:1.2fr .7fr .7fr}.kpi-row .barcell{grid-column:1/-1}.review-grid{grid-template-columns:1fr}.score{font-size:39px}.hero-row{align-items:flex-start}}@media(min-width:801px){.screen{padding:34px 40px 110px}.modal-back{align-items:center}}
 
+.print-only{display:none}
+@media print{body{background:#fff}.screen{display:none!important}.print-only{display:block}.nav,.top-actions,.hero-actions{display:none!important}.app{max-width:none}.card,.hero{box-shadow:none;border:1px solid #ddd}}
+@media(min-width:1000px){.screen{padding-left:54px;padding-right:54px}.grid{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<div class="app">
 <section id="login" class="screen login active">
-<div class="logo">معايير <span>COPC</span></div><div class="tag">منصة تطوير الموظفين</div>
-<div class="login-card"><h3>تسجيل الدخول التجريبي</h3><label>نوع الحساب</label>
-<select id="role" class="select"><option value="employee">موظفة — سارة</option><option value="supervisor">مشرفة — نورة</option></select>
-<button class="btn" onclick="login()">دخول إلى النسخة التجريبية</button></div>
-<p class="sub">نسخة Demo — جميع البيانات تجريبية</p></section>
-
-<section id="employee" class="screen">
-<div class="head"><div class="headmain"><div class="title">مرحبًا سارة 👋</div><div class="sub">موظفة خدمة عملاء · فريق COPC</div></div><div class="avatar">👩🏻</div></div>
-<div class="hero"><b>أداء أكتوبر 2024</b><div class="sub">النتيجة الموزونة الحالية</div><div style="font-size:38px;font-weight:900">87.4%</div></div>
-<div class="card"><div class="row"><b>مؤشرات KPI</b><span class="pill">4 / 4 محدثة</span></div><div class="grid">
-<div class="kpi"><b>AHT — متوسط وقت المكالمات</b><div class="ring">3:12</div><span class="tiny">Target 3:30 · 20%</span></div>
-<div class="kpi"><b>Absenteeism — الغياب</b><div class="ring">96%</div><span class="tiny">Target 95% · 25%</span></div>
-<div class="kpi"><b>Quality — الجودة</b><div class="ring">82%</div><span class="tiny">Target 80% · 35%</span></div>
-<div class="kpi"><b>Utilization — الانشغالية</b><div class="ring">78%</div><span class="tiny">Target 85% · 20%</span></div></div></div>
-<div class="card"><b>C-SAT — رضا العميل</b><div class="row"><span>92%</span><span class="tiny">هدف 90%</span></div><div class="bar"><i style="width:92%"></i></div><br><b>FCR — من أول مكالمة</b><div class="row"><span>88%</span><span class="tiny">هدف 85%</span></div><div class="bar"><i style="width:88%"></i></div></div>
-<div class="card"><b>خطة التطوير</b><p class="text">التركيز هذا الشهر على إدارة وقت المكالمة ورفع الانشغالية.</p><span class="pill">تقدم الخطة 75%</span></div></section>
-
-<section id="employeeSessions" class="screen">
-<div class="head"><button class="back" onclick="show('employee')">‹</button><div class="headmain"><div class="title">جلساتي</div><div class="sub">Side by Side & Coaching</div></div></div>
-<div class="card"><div class="row"><b>Side by Side</b><span class="pill">مجدولة</span></div><p class="text">16 أكتوبر 2024 · 10:00 ص<br>الاستماع للمكالمات والتقييم في Speechlog.</p></div>
-<div class="card"><div class="row"><b>Coaching Session</b><span class="pill danger">مطلوبة</span></div><p class="text">خطأ مؤثر #4587 · 14 أكتوبر 2024<br>تصحيح السبب وتطبيق إرشادات عملية ومتابعة التقدم.</p></div></section>
-
-<section id="supervisor" class="screen">
-<div class="head"><div class="headmain"><div class="title">لوحة المشرفة</div><div class="sub">نورة · فريق خدمة العملاء</div></div><div class="avatar">👩🏻‍💼</div></div>
-<div class="grid"><div class="card"><div class="sub">عدد الموظفات</div><div style="font-size:28px;font-weight:900">18</div></div><div class="card"><div class="sub">متوسط الأداء</div><div style="font-size:28px;font-weight:900">79.4%</div></div></div>
-<div class="card"><div class="row"><b>تنبيهات تحتاج متابعة</b><span class="pill danger">3</span></div><p class="text">• 5 موظفات تحت Target<br>• 3 جلسات Coaching مطلوبة<br>• سارة ضمن أعلى أداء</p></div>
-<div class="card"><div class="row"><b>الموظفات التابعة للمشرفة</b><span class="pill">10 موظفات</span></div>
-<div class="row" onclick="openEmployee(0)" style="cursor:pointer"><span>سارة أحمد</span><span class="pill">97.8% ›</span></div><div class="bar"><i style="width:98%"></i></div>
-<div class="row" onclick="openEmployee(1)" style="cursor:pointer"><span>ريم محمد</span><span class="pill">94.6% ›</span></div><div class="bar"><i style="width:95%"></i></div>
-<div class="row" onclick="openEmployee(2)" style="cursor:pointer"><span>نورة خالد</span><span class="pill">91.3% ›</span></div><div class="bar"><i style="width:91%"></i></div>
-<div class="row" onclick="openEmployee(3)" style="cursor:pointer"><span>جود عبدالله</span><span class="pill">88.7% ›</span></div><div class="bar"><i style="width:89%"></i></div>
-<div class="row" onclick="openEmployee(4)" style="cursor:pointer"><span>هند علي</span><span class="pill">84.2% ›</span></div><div class="bar"><i style="width:84%"></i></div>
-<div class="row" onclick="openEmployee(5)" style="cursor:pointer"><span>لطيفة سالم</span><span class="pill">79.5% ›</span></div><div class="bar"><i style="width:80%"></i></div>
-<div class="row" onclick="openEmployee(6)" style="cursor:pointer"><span>مشاعل حسن</span><span class="pill danger">74.1% ›</span></div><div class="bar"><i style="width:74%"></i></div>
-<div class="row" onclick="openEmployee(7)" style="cursor:pointer"><span>أمل يوسف</span><span class="pill danger">68.9% ›</span></div><div class="bar"><i style="width:69%"></i></div>
-<div class="row" onclick="openEmployee(8)" style="cursor:pointer"><span>رغد إبراهيم</span><span class="pill danger">61.7% ›</span></div><div class="bar"><i style="width:62%"></i></div>
-<div class="row" onclick="openEmployee(9)" style="cursor:pointer"><span>شهد ماجد</span><span class="pill danger">53.4% ›</span></div><div class="bar"><i style="width:53%"></i></div>
-</div></div>
-<button class="btn" onclick="show('manage')">إدارة أداء سارة →</button></section>
-
-<section id="employeeDetail" class="screen">
-<div class="head"><button class="back" onclick="show('supervisor')">‹</button><div class="headmain"><div id="detailName" class="title">ملف الموظفة</div><div id="detailSub" class="sub">تفاصيل الأداء</div></div><div class="avatar">👩🏻</div></div>
-<div class="hero"><b>ملخص الأداء</b><div class="sub">النتيجة الموزونة</div><div id="detailScore" style="font-size:38px;font-weight:900">97.8%</div></div>
-<div class="card"><div class="row"><b>KPI</b><span class="pill">شهري</span></div>
-<div class="grid">
-<div class="kpi"><b>AHT</b><div id="dAHT" style="font-size:22px;font-weight:900;margin:15px 0">3:05</div><span class="tiny">Target 3:30 · 20%</span></div>
-<div class="kpi"><b>Absenteeism</b><div id="dAbs" style="font-size:22px;font-weight:900;margin:15px 0">98%</div><span class="tiny">Target 95% · 25%</span></div>
-<div class="kpi"><b>Quality</b><div id="dQuality" style="font-size:22px;font-weight:900;margin:15px 0">94%</div><span class="tiny">Target 80% · 35%</span></div>
-<div class="kpi"><b>Utilization</b><div id="dUtil" style="font-size:22px;font-weight:900;margin:15px 0">91%</div><span class="tiny">Target 85% · 20%</span></div></div></div>
-<div class="card"><b>C-SAT / FCR</b><div class="row"><span>C-SAT</span><b id="dCSAT">96%</b></div><div class="bar"><i id="dCSATBar" style="width:96%"></i></div><br><div class="row"><span>FCR</span><b id="dFCR">93%</b></div><div class="bar"><i id="dFCRBar" style="width:93%"></i></div></div>
-<div class="card"><div class="row"><b>Monthly Performance Review</b><span class="pill">مكتملة</span></div><p class="text">نقاط القوة: جودة عالية ورضا عملاء ممتاز.<br>فرصة التحسين: المحافظة على ثبات الأداء.</p></div>
-<div class="card"><div class="row"><b>الجلسات</b><span class="pill">2</span></div><p class="text">✓ Side by Side — مكتملة<br>✓ Coaching Session — مكتملة<br>آخر متابعة: 14 أكتوبر 2024</p></div>
-<button class="btn" onclick="editSelected()">تعديل وحفظ بيانات الموظفة</button><button class="btn" style="background:#86cf42;color:#17345f" onclick="addSession()">إضافة Coaching Session</button>
+  <div class="login-wrap">
+    <div class="brand">
+      <div class="brand-mark">COPC</div>
+      <h1>معايير <span>COPC</span></h1>
+      <p>منصة تطوير الموظفين والأداء التشغيلي</p>
+    </div>
+    <div class="login-card">
+      <label class="label">نوع الحساب</label>
+      <select id="role" class="select">
+        <option value="employee">موظفة — سارة أحمد</option>
+        <option value="supervisor">مشرفة — نورة</option>
+      </select>
+      <label class="label">الدخول التجريبي</label>
+      <input id="demoPass" class="input" value="COPC2026" type="password" aria-label="كلمة المرور التجريبية">
+      <button class="btn full" onclick="login()">دخول آمن إلى النسخة التجريبية</button>
+      <div class="notice" style="margin-top:14px">نسخة V6 محسّنة · تعمل داخل المتصفح. التعديلات تُحفظ على هذا الجهاز.</div>
+    </div>
+  </div>
 </section>
-<section id="manage" class="screen">
-<div class="head"><button class="back" onclick="show('supervisor')">‹</button><div class="headmain"><div class="title">إدارة سارة</div><div class="sub">تعديل KPI والجلسات</div></div></div>
-<div class="tabs"><button class="tab sel" onclick="tab(this,'kpis')">KPI</button><button class="tab" onclick="tab(this,'reviews')">المراجعة</button><button class="tab" onclick="tab(this,'newsession')">جلسة جديدة</button></div>
-<div id="kpis" class="card"><b>نتائج KPI</b><label class="sub">Quality</label><input class="input" value="82%"><label class="sub">Utilization</label><input class="input" value="78%"><label class="sub">C-SAT</label><input class="input" value="92%"><label class="sub">FCR</label><input class="input" value="88%"><button class="btn" onclick="saveDemo()">حفظ التعديلات</button></div>
-<div id="reviews" class="card hide"><b>Monthly Performance Review</b><p class="text">✓ نقاط القوة: جودة التعامل ورضا العملاء<br>• فرصة التحسين: الانشغالية<br>• خطة العمل: تدريب على إدارة الوقت ومتابعة أسبوعية.</p><span class="pill">مراجعة أكتوبر مكتملة</span></div>
-<div id="newsession" class="card hide"><b>إنشاء جلسة</b><label class="sub">نوع الجلسة</label><select class="select"><option>Side by Side</option><option>Coaching Session</option></select><label class="sub">ملاحظات</label><textarea class="input" rows="4">الاستماع للمكالمة وتقديم الملاحظات اللازمة.</textarea><button class="btn" onclick="saveDemo()">حفظ الجلسة</button></div></section>
 
-<nav id="nav" class="nav hide"><button id="nh" onclick="navHome()"><b>⌂</b>الرئيسية</button><button id="ns" onclick="navSessions()"><b>▣</b>الجلسات</button><button onclick="logout()"><b>↩</b>خروج</button></nav>
+<section id="dashboard" class="screen">
+  <div class="topbar">
+    <div class="avatar" id="topAvatar">ن</div>
+    <div class="topmain"><div class="title" id="topTitle">لوحة الفريق</div><div class="sub" id="topSub">معايير COPC · مركز الأداء</div></div>
+    <div class="top-actions"><button class="iconbtn" onclick="showNotifications()">🔔</button><button class="iconbtn" onclick="logout()">↩</button></div>
+  </div>
+  <div id="dashboardBody"></div>
+</section>
+
+<section id="employeePage" class="screen">
+  <div class="topbar">
+    <button class="iconbtn" onclick="showScreen('dashboard')">→</button>
+    <div class="topmain"><div class="title" id="empTitle">ملف الموظفة</div><div class="sub" id="empSub">تفاصيل الأداء والتطوير</div></div>
+    <div class="avatar" id="empAvatar">س</div>
+  </div>
+  <div id="employeeBody"></div>
+</section>
+
+<section id="profilePage" class="screen">
+  <div class="topbar"><div class="topmain"><div class="title">حسابي</div><div class="sub">إعدادات وتجربة النظام</div></div><div class="avatar">⚙️</div></div>
+  <div class="card">
+    <h3 style="margin-top:0">معايير COPC</h3>
+    <p class="sub" style="line-height:1.9">منصة تجريبية لإدارة الأداء الشهري، مؤشرات KPI، جلسات Side by Side وCoaching، وملفات الموظفات.</p>
+    <div class="list" style="margin-top:14px">
+      <div class="list-row"><span>💾</span><div class="grow"><b>الحفظ المحلي</b><div class="sub">البيانات محفوظة على هذا الجهاز</div></div><span class="pill">مفعل</span></div>
+      <div class="list-row"><span>📱</span><div class="grow"><b>متوافق مع الجوال</b><div class="sub">تصميم Responsive وPWA</div></div><span class="pill">جاهز</span></div>
+    </div>
+  </div>
+  <button class="btn danger full" onclick="resetDemo()">إعادة بيانات النسخة التجريبية</button>
+</section>
+
+<nav id="nav" class="nav hide">
+  <button id="navDash" class="on" onclick="showScreen('dashboard')"><b>⌂</b>الرئيسية</button>
+  <button onclick="focusEmployees()"><b>👥</b>الموظفات</button>
+  <button onclick="showScreen('profilePage')"><b>⚙</b>الإعدادات</button>
+</nav>
 </div>
-<script>
-let current='';
-function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0)}
-function login(){current=document.getElementById('role').value;show(current==='employee'?'employee':'supervisor');document.getElementById('nav').classList.remove('hide');setNav('nh')}
-function logout(){current='';show('login');document.getElementById('nav').classList.add('hide')}
-function navHome(){show(current==='employee'?'employee':'supervisor');setNav('nh')}
-function navSessions(){show(current==='employee'?'employeeSessions':'manage');setNav('ns')}
-function setNav(id){document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('on'));document.getElementById(id).classList.add('on')}
-function tab(el,id){document.querySelectorAll('.tab').forEach(b=>b.classList.remove('sel'));el.classList.add('sel');['kpis','reviews','newsession'].forEach(x=>document.getElementById(x).classList.add('hide'));document.getElementById(id).classList.remove('hide')}
-function saveDemo(){
- const d=getDB(), e=d.employees[selectedEmployee]||d.employees[0];
- const inputs=document.querySelectorAll('#kpis .input');
- if(inputs.length>=4){e.quality=inputs[0].value;e.util=inputs[1].value;e.csat=inputs[2].value;e.fcr=inputs[3].value;
- const n=[e.quality,e.util,e.csat,e.fcr].map(x=>parseFloat(x)||0);e.score=(n.reduce((a,b)=>a+b,0)/n.length).toFixed(1)+'%';}
- saveDB(d);toast('تم الحفظ بنجاح ✓');
-}
 
+<div id="modalBack" class="modal-back" onclick="closeModal(event)">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-head"><h3 id="modalTitle">إضافة جلسة</h3><button class="iconbtn" onclick="closeModal()">✕</button></div>
+    <div id="modalContent"></div>
+  </div>
+</div>
+<div id="toast" class="toast hide"></div>
 
-const employees=[
-{name:"سارة أحمد",score:"97.8%",aht:"3:05",abs:"98%",quality:"94%",util:"91%",csat:"96%",fcr:"93%"},
-{name:"ريم محمد",score:"94.6%",aht:"3:18",abs:"97%",quality:"91%",util:"89%",csat:"94%",fcr:"91%"},
-{name:"نورة خالد",score:"91.3%",aht:"3:26",abs:"96%",quality:"88%",util:"87%",csat:"92%",fcr:"89%"},
-{name:"جود عبدالله",score:"88.7%",aht:"3:31",abs:"95%",quality:"85%",util:"84%",csat:"90%",fcr:"87%"},
-{name:"هند علي",score:"84.2%",aht:"3:42",abs:"94%",quality:"81%",util:"82%",csat:"87%",fcr:"84%"},
-{name:"لطيفة سالم",score:"79.5%",aht:"3:58",abs:"92%",quality:"78%",util:"79%",csat:"83%",fcr:"80%"},
-{name:"مشاعل حسن",score:"74.1%",aht:"4:10",abs:"90%",quality:"73%",util:"75%",csat:"79%",fcr:"76%"},
-{name:"أمل يوسف",score:"68.9%",aht:"4:25",abs:"88%",quality:"69%",util:"70%",csat:"75%",fcr:"71%"},
-{name:"رغد إبراهيم",score:"61.7%",aht:"4:46",abs:"85%",quality:"62%",util:"65%",csat:"68%",fcr:"64%"},
-{name:"شهد ماجد",score:"53.4%",aht:"5:02",abs:"81%",quality:"54%",util:"57%",csat:"61%",fcr:"58%"}
-];
-let selectedEmployee=0;
-function openEmployee(i){
- selectedEmployee=i; const d=getDB(); const e=d.employees[i]||employees[i];
- document.getElementById('detailName').textContent=e.name;
- document.getElementById('detailSub').textContent='ملف الموظفة · متابعة المشرفة';
- document.getElementById('detailScore').textContent=e.score;
- document.getElementById('dAHT').textContent=e.aht;
- document.getElementById('dAbs').textContent=e.abs;
- document.getElementById('dQuality').textContent=e.quality;
- document.getElementById('dUtil').textContent=e.util;
- document.getElementById('dCSAT').textContent=e.csat;
- document.getElementById('dFCR').textContent=e.fcr;
- document.getElementById('dCSATBar').style.width=e.csat;
- document.getElementById('dFCRBar').style.width=e.fcr;
- show('employeeDetail'); setNav('nh');
-}
-function openManageFromDetail(){show('manage');}
-</script>
 <script>
-/* COPC Demo data layer — stored in this browser via localStorage */
-const COPC_KEY='maayir-copc-demo-v1';
-const baseEmployees=[
-["سارة أحمد","97.8%","3:05","98%","94%","91%","96%","93%"],
-["ريم محمد","94.6%","3:18","97%","91%","89%","94%","91%"],
-["نورة خالد","91.3%","3:26","96%","88%","87%","92%","89%"],
-["جود عبدالله","88.7%","3:31","95%","85%","84%","90%","87%"],
-["هند علي","84.2%","3:42","94%","81%","82%","87%","84%"],
-["لطيفة سالم","79.5%","3:58","92%","78%","79%","83%","80%"],
-["مشاعل حسن","74.1%","4:10","90%","73%","75%","79%","76%"],
-["أمل يوسف","68.9%","4:25","88%","69%","70%","75%","71%"],
-["رغد إبراهيم","61.7%","4:46","85%","62%","65%","68%","64%"],
-["شهد ماجد","53.4%","5:02","81%","54%","57%","61%","58%"]
+const KEY="maayir-copc-v5";
+const seedEmployees=[
+{name:"سارة أحمد",score:97.8,aht:"3:05",abs:98,quality:94,util:91,csat:96,fcr:93,status:"ممتاز"},
+{name:"ريم محمد",score:94.6,aht:"3:18",abs:97,quality:91,util:89,csat:94,fcr:91,status:"ممتاز"},
+{name:"نورة خالد",score:91.3,aht:"3:26",abs:96,quality:88,util:87,csat:92,fcr:89,status:"ممتاز"},
+{name:"جود عبدالله",score:88.7,aht:"3:31",abs:95,quality:85,util:84,csat:90,fcr:87,status:"جيد"},
+{name:"هند علي",score:84.2,aht:"3:42",abs:94,quality:81,util:82,csat:87,fcr:84,status:"جيد"},
+{name:"لطيفة سالم",score:79.5,aht:"3:58",abs:92,quality:78,util:79,csat:83,fcr:80,status:"يحتاج تطوير"},
+{name:"مشاعل حسن",score:74.1,aht:"4:10",abs:90,quality:73,util:75,csat:79,fcr:76,status:"يحتاج تطوير"},
+{name:"أمل يوسف",score:68.9,aht:"4:25",abs:88,quality:69,util:70,csat:75,fcr:71,status:"يحتاج تطوير"},
+{name:"رغد إبراهيم",score:61.7,aht:"4:46",abs:85,quality:62,util:65,csat:68,fcr:64,status:"متابعة مكثفة"},
+{name:"شهد ماجد",score:53.4,aht:"5:02",abs:81,quality:54,util:57,csat:61,fcr:58,status:"متابعة مكثفة"}
 ];
-function getDB(){
-  let d=JSON.parse(localStorage.getItem(COPC_KEY)||'null');
-  if(!d)d={employees:baseEmployees.map(x=>({name:x[0],score:x[1],aht:x[2],abs:x[3],quality:x[4],util:x[5],csat:x[6],fcr:x[7]})),sessions:[],reviews:[]};
-  return d;
+function freshDB(){return {employees:seedEmployees.map((e,i)=>({...e,id:i+1,notes:[],sessions:i<3?[{type:"Side by Side",date:"2026-09-05",note:"مراجعة مكالمة ناجحة وتعزيز أفضل الممارسات"}]:[] })),currentRole:null,selected:1};}
+function db(){try{return JSON.parse(localStorage.getItem(KEY))||freshDB()}catch(e){return freshDB()}}
+function save(x){localStorage.setItem(KEY,JSON.stringify(x))}
+let state=db();
+
+function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.remove("hide");clearTimeout(window.__t);window.__t=setTimeout(()=>t.classList.add("hide"),2200)}
+function showScreen(id){document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));document.getElementById(id).classList.add("active");window.scrollTo(0,0);if(id==="dashboard")renderDashboard();if(id==="employeePage")renderEmployee();document.getElementById("nav").classList.toggle("hide",id==="login")}
+function login(){const pass=document.getElementById("demoPass").value;if(pass!=="COPC2026"){toast("كلمة المرور التجريبية غير صحيحة");return}state=db();state.currentRole=document.getElementById("role").value;save(state);showScreen("dashboard")}
+function logout(){state.currentRole=null;save(state);document.getElementById("nav").classList.add("hide");showScreen("login")}
+function resetDemo(){if(confirm("إعادة كل البيانات التجريبية؟")){state=freshDB();state.currentRole=document.getElementById("role").value||"supervisor";save(state);toast("تمت إعادة البيانات");showScreen("dashboard")}}
+function initials(n){return n.split(" ").slice(0,2).map(x=>x[0]).join("")}
+function gradeClass(s){return s>=90?"":s>=80?"warn":"bad"}
+function metric(label,value,target,unit="",score=null){const pct=score===null?Math.min(100,Math.round((parseFloat(value)||0)/target*100)):score;return `<div class="card metric"><div class="name">${label}</div><div class="value">${value}${unit}</div><div class="target">Target ${target}${unit}</div><div class="progress ${gradeClass(pct)}"><i style="width:${Math.min(100,pct)}%"></i></div></div>`}
+function supervisorDashboard(){
+const es=state.employees, avg=(es.reduce((a,e)=>a+e.score,0)/es.length).toFixed(1), good=es.filter(e=>e.score>=90).length, risk=es.filter(e=>e.score<80).length;
+return `<div class="hero"><div class="hero-row"><div><div class="sub">نظرة سريعة على الفريق</div><div class="score">${avg}%</div><div style="margin-top:7px;font-weight:800">متوسط الأداء الموزون</div></div><div style="font-size:54px">📊</div></div><div class="hero-actions"><button class="btn" onclick="focusEmployees()">إدارة الموظفات</button><button class="btn" onclick="openSessionModal()">+ إضافة جلسة</button></div></div>
+<div class="section-head"><h2>مؤشرات الفريق</h2><small>${new Date().toLocaleDateString("ar-SA")}</small></div>
+<div class="grid">
+${metric("إجمالي الموظفات",es.length,"10","")}
+${metric("أداء ممتاز",good,"10","")}
+${metric("تحتاج متابعة",risk,"10","")}
+${metric("متوسط الجودة",(es.reduce((a,e)=>a+e.quality,0)/es.length).toFixed(0),80,"%")}
+</div>
+<div class="twocol">
+<div><div class="section-head"><h2>أداء الموظفات</h2><small>${es.length} ملفات</small></div>
+<div class="toolbar">
+<button class="btn" onclick="openAddEmployee()">+ إضافة موظفة</button>
+<button class="btn secondary" onclick="openTeamReport()">📊 تقرير الفريق</button>
+<button class="btn secondary" onclick="exportData()">⬇️ تصدير البيانات</button>
+</div><div class="toolbar"><input id="searchEmp" class="input search" placeholder="ابحثي باسم الموظفة..." oninput="renderEmployees()"><select id="filterEmp" class="select" style="max-width:180px" onchange="renderEmployees()"><option value="all">كل المستويات</option><option value="excellent">ممتاز</option><option value="good">جيد</option><option value="risk">تحتاج تطوير</option></select></div><div id="employeeList" class="employees"></div></div>
+<div><div class="section-head"><h2>تنبيهات التطوير</h2></div><div class="card"><div class="list">${es.filter(e=>e.score<80).slice(0,4).map(e=>`<div class="list-row"><div class="avatar">${initials(e.name)}</div><div class="grow"><b>${e.name}</b><div class="sub">الأداء ${e.score}% · الجودة ${e.quality}%</div></div><span class="pill bad">متابعة</span></div>`).join("")}</div></div></div>
+</div>`;
 }
-function saveDB(d){localStorage.setItem(COPC_KEY,JSON.stringify(d));}
-function toast(t){let x=document.createElement('div');x.className='toast';x.textContent=t;document.body.appendChild(x);setTimeout(()=>x.remove(),1800)}
-function refreshSupervisor(){
-  const d=getDB(), list=document.querySelector('#supervisor .card:nth-of-type(3)');
-  if(!list)return;
-  const avg=(d.employees.reduce((s,e)=>s+parseFloat(e.score),0)/d.employees.length).toFixed(1);
-  const stat=document.querySelector('#supervisor .card:nth-of-type(1) .card');
+function employeeDashboard(){
+const e=state.employees.find(x=>x.id===state.selected)||state.employees[0];
+return `<div class="hero"><div class="hero-row"><div><div class="sub">مرحبًا ${e.name.split(" ")[0]} 👋</div><div class="score">${e.score}%</div><div style="margin-top:7px;font-weight:800">النتيجة الموزونة الحالية</div></div><div style="font-size:50px">🏆</div></div><div class="hero-actions"><button class="btn" onclick="openEmployee(${e.id})">ملفي التفصيلي</button><button class="btn" onclick="openSessionModal(${e.id})">طلب جلسة Coaching</button></div></div>
+<div class="section-head"><h2>مؤشرات KPI</h2><span class="pill">آخر تحديث اليوم</span></div>
+<div class="grid">
+${metric("AHT — متوسط وقت المكالمات",e.aht,"3:30","",null)}
+${metric("Absenteeism — الحضور",e.abs,"95","%",e.abs)}
+${metric("Quality — الجودة",e.quality,"80","%",e.quality)}
+${metric("Utilization — الانشغالية",e.util,"85","%",e.util)}
+</div>
+<div class="twocol" style="margin-top:12px"><div class="card"><div class="section-head" style="margin-top:0"><h2>رضا العميل والاتصال</h2></div><div class="review-grid"><div class="review-box"><b>C-SAT</b><span class="score-mini">${e.csat}%</span><div class="progress"><i style="width:${e.csat}%"></i></div></div><div class="review-box"><b>FCR</b><span class="score-mini">${e.fcr}%</span><div class="progress"><i style="width:${e.fcr}%"></i></div></div></div></div><div class="card"><b>خطة الشهر</b><p class="sub" style="line-height:1.8">تعزيز نقاط القوة، معالجة فجوات الجودة، ومراجعة التقدم في Monthly Performance.</p><span class="pill lav">قيد المتابعة</span></div></div>`;
 }
-function editSelected(){
-  const d=getDB(), e=d.employees[selectedEmployee];
-  const fields=[['AHT','aht'],['Absenteeism','abs'],['Quality','quality'],['Utilization','util'],['C-SAT','csat'],['FCR','fcr']];
-  const vals=fields.map(([label,key])=>prompt(label+' للموظفة '+e.name,e[key]));
-  if(vals.some(v=>v===null))return;
-  fields.forEach(([,key],i)=>e[key]=vals[i]);
-  const nums=[parseFloat(e.quality)||0,parseFloat(e.util)||0,parseFloat(e.csat)||0,parseFloat(e.fcr)||0];
-  e.score=(nums.reduce((a,b)=>a+b,0)/nums.length).toFixed(1)+'%';
-  saveDB(d); openEmployee(selectedEmployee); toast('تم حفظ بيانات الموظفة ✓');
+function renderDashboard(){document.getElementById("topAvatar").textContent=state.currentRole==="supervisor"?"ن":"س";document.getElementById("topTitle").textContent=state.currentRole==="supervisor"?"لوحة المشرفة":"لوحتي";document.getElementById("topSub").textContent=state.currentRole==="supervisor"?"إدارة الأداء · فريق COPC":"أداءك · مؤشرات KPI · التطوير";document.getElementById("dashboardBody").innerHTML=state.currentRole==="supervisor"?supervisorDashboard():employeeDashboard();if(state.currentRole==="supervisor")renderEmployees()}
+function renderEmployees(){const box=document.getElementById("employeeList");if(!box)return;const q=(document.getElementById("searchEmp")?.value||"").trim();const f=document.getElementById("filterEmp")?.value||"all";let es=state.employees.filter(e=>e.name.includes(q));if(f==="excellent")es=es.filter(e=>e.score>=90);if(f==="good")es=es.filter(e=>e.score>=80&&e.score<90);if(f==="risk")es=es.filter(e=>e.score<80);box.innerHTML=es.map(e=>`<div class="card employee" onclick="openEmployee(${e.id})"><div class="employee-top"><div class="avatar">${initials(e.name)}</div><div class="grow"><b>${e.name}</b><div class="sub">KPI · ${e.status}</div></div><div class="score-mini">${e.score}%</div></div><div class="rankbar"><i style="width:${e.score}%"></i></div><div class="employee-foot"><span>Quality ${e.quality}%</span><span class="pill ${e.score<80?"bad":e.score<90?"warn":""}">${e.status}</span></div></div>`).join("")||`<div class="card empty">لا توجد نتائج مطابقة.</div>`}
+function focusEmployees(){showScreen("dashboard");setTimeout(()=>document.getElementById("searchEmp")?.focus(),80)}
+function openEmployee(id){state.selected=id;save(state);showScreen("employeePage")}
+function renderEmployee(){const e=state.employees.find(x=>x.id===state.selected)||state.employees[0];document.getElementById("empTitle").textContent=e.name;document.getElementById("empSub").textContent=`ملف الموظفة · ${e.status}`;document.getElementById("empAvatar").textContent=initials(e.name);document.getElementById("employeeBody").innerHTML=`
+<div class="hero"><div class="hero-row"><div><div class="sub">النتيجة الموزونة</div><div class="score">${e.score}%</div><div style="margin-top:7px;font-weight:800">${e.status}</div></div><div style="font-size:48px">👩🏻‍💼</div></div><div class="hero-actions">
+<button class="btn" onclick="editEmployee(${e.id})">تعديل KPI</button>
+<button class="btn" onclick="openSessionModal(${e.id})">+ جلسة تطوير</button>
+<button class="btn" onclick="openMonthlyReview(${e.id})">📝 Monthly Review</button>
+<button class="btn" onclick="printEmployee(${e.id})">🖨️ تقرير الموظفة</button>
+</div></div>
+<div class="section-head"><h2>لوحة KPI</h2><small>الأوزان: AHT 20% · Abs 25% · Quality 35% · Util 20%</small></div>
+<div class="kpi-table">
+<div class="kpi-row"><b>AHT</b><span>${e.aht}</span><span>Target 3:30</span><div class="barcell"><div class="progress ${e.aht<="3:30"?"":"warn"}"><i style="width:${Math.min(100,Math.max(20,100-(parseInt(e.aht)-210)/2))}%"></i></div></div></div>
+<div class="kpi-row"><b>Absenteeism</b><span>${e.abs}%</span><span>Target 95%</span><div class="barcell"><div class="progress ${e.abs<95?"bad":""}"><i style="width:${e.abs}%"></i></div></div></div>
+<div class="kpi-row"><b>Quality</b><span>${e.quality}%</span><span>Target 80%</span><div class="barcell"><div class="progress ${e.quality<80?"bad":""}"><i style="width:${e.quality}%"></i></div></div></div>
+<div class="kpi-row"><b>Utilization</b><span>${e.util}%</span><span>Target 85%</span><div class="barcell"><div class="progress ${e.util<85?"bad":""}"><i style="width:${e.util}%"></i></div></div></div>
+</div>
+<div class="twocol" style="margin-top:12px"><div class="card"><div class="section-head" style="margin-top:0"><h2>Monthly Performance</h2><span class="pill">شهري</span></div><div class="review-grid"><div class="review-box"><b>نقاط القوة</b><div class="sub">الالتزام، رضا العميل، واستقرار الأداء.</div></div><div class="review-box"><b>فرص التحسين</b><div class="sub">تقليل زمن المكالمة ورفع الجودة عند الحاجة.</div></div><div class="review-box"><b>خطة العمل</b><div class="sub">هدفان واضحان للشهر القادم مع متابعة أسبوعية.</div></div><div class="review-box"><b>المتابعة</b><div class="sub">مراجعة النتائج وتوثيق الإجراء في نهاية الشهر.</div></div></div></div>
+<div class="card"><div class="section-head" style="margin-top:0"><h2>الجلسات</h2><span class="pill lav">${e.sessions.length}</span></div>${e.sessions.length?e.sessions.slice().reverse().map(s=>`<div class="session"><div class="session-icon">${s.type==="Coaching"?"🎯":"🎧"}</div><div class="grow"><b>${s.type}</b><div class="sub">${s.date}</div><div class="sub" style="margin-top:5px">${s.note}</div></div></div>`).join(""):`<div class="empty">لا توجد جلسات مسجلة بعد.</div>`}</div></div>
+<div class="card" style="margin-top:12px"><div class="section-head" style="margin-top:0"><h2>C-SAT & FCR</h2></div><div class="grid"><div class="review-box"><b>C-SAT</b><div class="score-mini">${e.csat}%</div><div class="progress"><i style="width:${e.csat}%"></i></div></div><div class="review-box"><b>FCR</b><div class="score-mini">${e.fcr}%</div><div class="progress"><i style="width:${e.fcr}%"></i></div></div></div></div>`}
+function editEmployee(id){const e=state.employees.find(x=>x.id===id);document.getElementById("modalTitle").textContent="تعديل بيانات الموظفة";document.getElementById("modalContent").innerHTML=`<label class="label">النتيجة الموزونة %</label><input id="mScore" class="input" type="number" step=".1" value="${e.score}"><label class="label">AHT</label><input id="mAht" class="input" value="${e.aht}"><label class="label">Absenteeism %</label><input id="mAbs" class="input" type="number" value="${e.abs}"><label class="label">Quality %</label><input id="mQuality" class="input" type="number" value="${e.quality}"><label class="label">Utilization %</label><input id="mUtil" class="input" type="number" value="${e.util}"><label class="label">C-SAT %</label><input id="mCsat" class="input" type="number" value="${e.csat}"><label class="label">FCR %</label><input id="mFcr" class="input" type="number" value="${e.fcr}"><div class="modal-actions"><button class="btn" onclick="saveEmployee(${id})">حفظ التغييرات</button><button class="btn secondary" onclick="closeModal()">إلغاء</button></div>`;openModal()}
+function saveEmployee(id){const e=state.employees.find(x=>x.id===id);e.score=+document.getElementById("mScore").value;e.aht=document.getElementById("mAht").value;e.abs=+document.getElementById("mAbs").value;e.quality=+document.getElementById("mQuality").value;e.util=+document.getElementById("mUtil").value;e.csat=+document.getElementById("mCsat").value;e.fcr=+document.getElementById("mFcr").value;e.status=e.score>=90?"ممتاز":e.score>=80?"جيد":e.score>=65?"يحتاج تطوير":"متابعة مكثفة";save(state);closeModal();renderEmployee();toast("تم حفظ بيانات الموظفة")}
+function openSessionModal(id=state.selected){document.getElementById("modalTitle").textContent="إضافة جلسة تطوير";document.getElementById("modalContent").innerHTML=`<label class="label">نوع الجلسة</label><select id="sType" class="select"><option>Coaching</option><option>Side by Side</option><option>Monthly Performance</option></select><label class="label">التاريخ</label><input id="sDate" class="input" type="date" value="${new Date().toISOString().slice(0,10)}"><label class="label">ملاحظات الجلسة</label><textarea id="sNote" class="textarea" rows="4" placeholder="اكتبي الملاحظة وخطة المتابعة..."></textarea><div class="modal-actions"><button class="btn" onclick="saveSession(${id})">حفظ الجلسة</button><button class="btn secondary" onclick="closeModal()">إلغاء</button></div>`;openModal()}
+function saveSession(id){const e=state.employees.find(x=>x.id===id);e.sessions.push({type:document.getElementById("sType").value,date:document.getElementById("sDate").value,note:document.getElementById("sNote").value||"جلسة تطوير ومتابعة الأداء"});save(state);closeModal();toast("تم تسجيل الجلسة");if(state.currentRole==="supervisor")renderDashboard();else renderEmployee()}
+function showNotifications(){const risks=state.employees.filter(e=>e.score<80);document.getElementById("modalTitle").textContent="التنبيهات";document.getElementById("modalContent").innerHTML=risks.length?risks.map(e=>`<div class="list-row" style="margin-bottom:8px"><div class="avatar">${initials(e.name)}</div><div class="grow"><b>${e.name}</b><div class="sub">الأداء ${e.score}% · تحتاج خطة تطوير</div></div><span class="pill bad">تنبيه</span></div>`).join(""):`<div class="empty">لا توجد تنبيهات حرجة 🎉</div>`;openModal()}
+function openModal(){document.getElementById("modalBack").classList.add("open")}
+function closeModal(e){if(!e||e.target===document.getElementById("modalBack"))document.getElementById("modalBack").classList.remove("open")}
+
+function openAddEmployee(){
+ document.getElementById("modalTitle").textContent="إضافة موظفة جديدة";
+ document.getElementById("modalContent").innerHTML=`
+ <label class="label">الاسم</label><input id="nName" class="input" placeholder="مثال: مها عبدالله">
+ <label class="label">النتيجة الموزونة %</label><input id="nScore" class="input" type="number" value="75">
+ <label class="label">AHT</label><input id="nAht" class="input" value="3:45">
+ <label class="label">Absenteeism %</label><input id="nAbs" class="input" type="number" value="92">
+ <label class="label">Quality %</label><input id="nQuality" class="input" type="number" value="75">
+ <label class="label">Utilization %</label><input id="nUtil" class="input" type="number" value="78">
+ <label class="label">C-SAT %</label><input id="nCsat" class="input" type="number" value="80">
+ <label class="label">FCR %</label><input id="nFcr" class="input" type="number" value="77">
+ <div class="modal-actions"><button class="btn" onclick="saveNewEmployee()">إضافة</button><button class="btn secondary" onclick="closeModal()">إلغاء</button></div>`;
+ openModal();
 }
-function addSession(){
-  const d=getDB();
-  d.sessions.push({employee:d.employees[selectedEmployee].name,type:'Coaching Session',date:new Date().toLocaleDateString('ar-SA'),status:'مجدولة'});
-  saveDB(d); toast('تم إنشاء الجلسة وحفظها ✓');
+function saveNewEmployee(){
+ const name=document.getElementById("nName").value.trim();
+ if(!name){toast("اكتبي اسم الموظفة");return}
+ const score=+document.getElementById("nScore").value;
+ const e={id:Date.now(),name,score,aht:document.getElementById("nAht").value,
+ abs:+document.getElementById("nAbs").value,quality:+document.getElementById("nQuality").value,
+ util:+document.getElementById("nUtil").value,csat:+document.getElementById("nCsat").value,
+ fcr:+document.getElementById("nFcr").value,notes:[],sessions:[],
+ status:score>=90?"ممتاز":score>=80?"جيد":score>=65?"يحتاج تطوير":"متابعة مكثفة"};
+ state.employees.push(e);state.selected=e.id;save(state);closeModal();toast("تمت إضافة الموظفة");renderDashboard();
 }
-function resetDemo(){if(confirm('إعادة بيانات النسخة التجريبية؟')){localStorage.removeItem(COPC_KEY);location.reload()}}
+function openTeamReport(){
+ const es=state.employees, avg=(es.reduce((a,e)=>a+e.score,0)/es.length).toFixed(1);
+ const excellent=es.filter(e=>e.score>=90).length, risk=es.filter(e=>e.score<80).length;
+ document.getElementById("modalTitle").textContent="تقرير أداء الفريق";
+ document.getElementById("modalContent").innerHTML=`
+ <div class="grid">
+ <div class="review-box"><b>متوسط الفريق</b><div class="score-mini">${avg}%</div></div>
+ <div class="review-box"><b>ممتاز</b><div class="score-mini">${excellent}</div></div>
+ <div class="review-box"><b>تحتاج متابعة</b><div class="score-mini">${risk}</div></div>
+ <div class="review-box"><b>عدد الموظفات</b><div class="score-mini">${es.length}</div></div>
+ </div>
+ <div class="section-head"><h2>أعلى أداء</h2></div>
+ <div class="list">${es.slice().sort((a,b)=>b.score-a.score).slice(0,5).map((e,i)=>`
+ <div class="list-row"><span class="pill">${i+1}</span><div class="grow"><b>${e.name}</b><div class="sub">${e.score}% · جودة ${e.quality}%</div></div></div>`).join("")}</div>
+ <div class="modal-actions"><button class="btn" onclick="exportData();closeModal()">تصدير التقرير</button></div>`;
+ openModal();
+}
+function openMonthlyReview(id){
+ const e=state.employees.find(x=>x.id===id);
+ document.getElementById("modalTitle").textContent="Monthly Performance Review";
+ document.getElementById("modalContent").innerHTML=`
+ <div class="notice">مراجعة شهرية منظمة: نقاط القوة، فرص التحسين، التحديات، وخطة الشهر القادم.</div>
+ <label class="label">نقاط القوة</label><textarea id="rStrength" class="textarea" rows="3" placeholder="ما الذي تحقق بشكل جيد؟"></textarea>
+ <label class="label">فرص التحسين</label><textarea id="rImprove" class="textarea" rows="3" placeholder="ما المجالات التي تحتاج تطويرًا؟"></textarea>
+ <label class="label">التحديات</label><textarea id="rChallenges" class="textarea" rows="3" placeholder="ما التحديات التي ظهرت؟"></textarea>
+ <label class="label">خطة العمل للشهر القادم</label><textarea id="rPlan" class="textarea" rows="3" placeholder="اكتبي هدفين أو ثلاثة بشكل واضح وقابل للمتابعة."></textarea>
+ <div class="modal-actions"><button class="btn" onclick="saveMonthlyReview(${id})">حفظ المراجعة</button><button class="btn secondary" onclick="closeModal()">إلغاء</button></div>`;
+ openModal();
+}
+function saveMonthlyReview(id){
+ const e=state.employees.find(x=>x.id===id);
+ e.notes=e.notes||[];
+ e.notes.push({date:new Date().toISOString().slice(0,10),strength:document.getElementById("rStrength").value,
+ improve:document.getElementById("rImprove").value, challenges:document.getElementById("rChallenges").value,
+ plan:document.getElementById("rPlan").value});
+ save(state);closeModal();toast("تم حفظ Monthly Review");
+}
+function printEmployee(id){
+ const e=state.employees.find(x=>x.id===id);
+ const w=window.open("","_blank");
+ if(!w){toast("اسمحي بالنوافذ المنبثقة للطباعة");return}
+ w.document.write(`<html dir="rtl"><head><title>تقرير ${e.name}</title><style>
+ body{font-family:Arial,sans-serif;padding:30px;color:#17345f}h1{color:#0d766d}
+ table{width:100%;border-collapse:collapse;margin-top:20px}td,th{border:1px solid #ddd;padding:10px;text-align:right}
+ .score{font-size:36px;font-weight:bold}</style></head><body>
+ <h1>معايير COPC</h1><h2>تقرير أداء الموظفة: ${e.name}</h2>
+ <div class="score">${e.score}%</div><p>الحالة: ${e.status}</p>
+ <table><tr><th>KPI</th><th>النتيجة</th><th>Target</th></tr>
+ <tr><td>AHT</td><td>${e.aht}</td><td>3:30</td></tr>
+ <tr><td>Absenteeism</td><td>${e.abs}%</td><td>95%</td></tr>
+ <tr><td>Quality</td><td>${e.quality}%</td><td>80%</td></tr>
+ <tr><td>Utilization</td><td>${e.util}%</td><td>85%</td></tr>
+ <tr><td>C-SAT</td><td>${e.csat}%</td><td>—</td></tr>
+ <tr><td>FCR</td><td>${e.fcr}%</td><td>—</td></tr></table>
+ <h3>الجلسات</h3><p>${e.sessions.length} جلسة مسجلة</p>
+ </body></html>`);
+ w.document.close();setTimeout(()=>w.print(),400);
+}
+function exportData(){
+ const payload=JSON.stringify(state,null,2);
+ const blob=new Blob([payload],{type:"application/json"});
+ const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="maayir-copc-data.json";a.click();
+ URL.revokeObjectURL(a.href);toast("تم تجهيز ملف البيانات");
+}
+if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}))}
 </script>
-<script>if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js")}</script></body></html>
+</body>
+</html>
