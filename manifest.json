@@ -3,8 +3,8 @@
   "short_name": "COPC",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#f4f6f8",
-  "theme_color": "#2d8c7d",
+  "background_color": "#f3f5f7",
+  "theme_color": "#3d8b82",
   "dir": "rtl",
   "lang": "ar"
 }
