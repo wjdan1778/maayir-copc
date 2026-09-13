@@ -22,7 +22,7 @@ body{background:#e9edf0}.app{display:flex;max-width:1400px;min-height:100vh;back
 <div class="brand"><div class="brand-mark">COPC</div><h1>معايير <span>COPC</span></h1><p>منصة تطوير الموظفين وإدارة الأداء التشغيلي</p></div>
 <div class="login-card">
 <label class="label">نوع الحساب</label>
-<select id="role" class="select"><option value="supervisor">مشرفة — نورة</option><option value="employee">موظفة — سارة أحمد</option></select>
+<select id="role" class="select"><option value="supervisor">مشرفة — وجدان</option><option value="employee">موظفة — سارة أحمد</option></select>
 <label class="label">كلمة المرور التجريبية</label><input id="pass" class="input" value="COPC2026" type="password">
 <button class="btn full" onclick="enter()">دخول إلى المنصة</button>
 <div class="notice" style="margin-top:14px">نسخة تجريبية متعددة الصفحات — كل قسم يفتح صفحة مستقلة، والبيانات تحفظ محليًا على نفس الجهاز.</div>
@@ -128,7 +128,7 @@ function monthlyReview(id=state.selected){
 function printEmployee(id){
  const e=state.employees.find(x=>x.id==id),w=window.open("","_blank");
  if(!w){toast("اسمحي بالنوافذ المنبثقة للطباعة");return}
- w.document.write(`<html dir="rtl"><head><title>تقرير ${e.name}</title><style>body{font-family:Arial;padding:30px;color:#17345f}h1{color:#0d766d}table{width:100%;border-collapse:collapse}td,th{border:1px solid #ddd;padding:10px}</style></head><body><h1>معايير COPC</h1><h2>تقرير ${e.name}</h2><h3>${e.score}% — ${e.status}</h3><table><tr><th>KPI</th><th>النتيجة</th><th>Target</th></tr><tr><td>AHT</td><td>${e.aht}</td><td>3:30</td></tr><tr><td>Absenteeism</td><td>${e.abs}%</td><td>95%</td></tr><tr><td>Quality</td><td>${e.quality}%</td><td>80%</td></tr><tr><td>Utilization</td><td>${e.util}%</td><td>85%</td></tr><tr><td>C-SAT</td><td>${e.csat}%</td><td>—</td></tr><tr><td>FCR</td><td>${e.fcr}%</td><td>—</td></tr></table></body></html>`);
+ w.document.write(`<html dir="rtl"><head><title>تقرير ${e.name}</title><style>body{font-family:Arial;padding:30px;color:#17345f}h1{color:#0d766d}table{width:100%;border-collapse:collapse}td,th{border:1px solid #ddd;padding:10px}</style></head><body><h1>معايير COPC</h1><h2>تقرير ${e.name}</h2><h3>${e.score}% — ${e.status}</h3><table><tr><th>KPI</th><th>النتيجة</th><th>Target</th></tr><tr><td>AHT</td><td>${e.aht}</td><td>3:30</td></tr><tr><td>Absenteeism</td><td>${e.abs}%</td><td>95%</td></tr><tr><td>Quality</td><td>${e.quality}%</td><td>80%</td></tr><tr><td>Utilization</td><td>${e.util}%</td><td>85%</td></tr><tr><td>C-SAT</td><td>${e.csat}%</td><td>—</td></tr><tr><td>FCR</td><td>${e.fcr}%</td><td>—</td></tr></table><script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}</script></body></html>`);
  w.document.close();setTimeout(()=>w.print(),300);
 }
-</script><script>function enter(){if(document.getElementById('pass').value!=='COPC2026'){toast('كلمة المرور التجريبية غير صحيحة');return}setRole(document.getElementById('role').value);location.href='dashboard.html'}</script></body></html>
+</script><script>function enter(){if(document.getElementById('pass').value!=='COPC2026'){toast('كلمة المرور التجريبية غير صحيحة');return}const role=document.getElementById('role').value;setRole(role);location.href=role==='employee'?'employee-home.html':'dashboard.html'}</script><script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}</script></body></html>
