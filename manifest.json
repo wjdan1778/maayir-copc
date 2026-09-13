@@ -1,0 +1,10 @@
+{
+  "name":"معايير COPC — تطوير الموظفين",
+  "short_name":"Maayir COPC",
+  "start_url":"./index.html",
+  "display":"standalone",
+  "background_color":"#eef1f4",
+  "theme_color":"#08786d",
+  "lang":"ar",
+  "dir":"rtl"
+}
