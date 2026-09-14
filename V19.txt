@@ -1,0 +1,1 @@
+V19 - separate Manager/Supervisor/Employee dashboards; 106 project employees; 3-month reports; hamburger navigation; scheduling and print actions.
