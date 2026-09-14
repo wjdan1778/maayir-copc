@@ -1,2 +1,1 @@
-self.addEventListener('install',function(e){self.skipWaiting();});
-self.addEventListener('activate',function(e){e.waitUntil(self.registration.unregister());});
+self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(self.registration.unregister()));

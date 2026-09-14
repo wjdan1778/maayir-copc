@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#173d67">
-<title>معايير COPC</title>
-<link rel="stylesheet" href="style.css?v=14">
+<title>منصة أداء</title>
+<link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 <div class="login">
   <div class="loginbox">
-    <div class="logoBox">COPC</div>
-    <h1>معايير COPC</h1>
-    <div class="lead">منصة تطوير الموظفين وإدارة الأداء</div>
+    <div class="logoBox">أداء</div>
+    <h1>منصة أداء</h1>
+    <div class="lead">متابعة • تطوير • إنجاز</div>
     <div class="field">
       <label for="role">نوع الحساب</label>
       <select id="role" class="select">
@@ -25,7 +25,7 @@
       <input id="username" class="input" value="وجدان" readonly>
     </div>
     <button id="loginBtn" class="btn" style="width:100%;margin-top:8px">تسجيل الدخول</button>
-    <div id="loginStatus" class="muted" style="text-align:center;margin-top:10px"></div>
+    <div class="muted" style="text-align:center;margin-top:10px">دخول سريع بدون كلمة مرور</div>
   </div>
 </div>
 <script>
@@ -39,7 +39,7 @@
   btn.addEventListener('click',function(){
     btn.disabled=true;
     btn.textContent='جارٍ الدخول...';
-    location.href=role.value==='supervisor'?'supervisor.html':'employee-home.html';
+    window.location.href=role.value==='supervisor'?'supervisor.html':'employee-home.html';
   });
 })();
 </script>
